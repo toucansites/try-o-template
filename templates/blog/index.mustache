@@ -2,6 +2,8 @@
 {{$main}}
 <section id="blog">
 
+    {{& page.contents}}
+    
     {{#empty(site.context.featured)}}
     {{/empty(site.context.featured)}}
     {{^empty(site.context.featured)}}
@@ -11,9 +13,6 @@
     {{/site.context.featured}}
     </div>
     {{/empty(site.context.featured)}}
-
-    {{& page.contents}}
-    
     
     {{#empty(site.context.posts)}}
     {{/empty(site.context.posts)}}

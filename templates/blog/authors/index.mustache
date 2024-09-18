@@ -1,22 +1,22 @@
 {{<html}}
 {{$main}}
 
-{{& page.contents}}
+<section id="authors">
 
-<div id="authors" class="wrapper">
+    {{& page.contents}}
 
     {{#empty(site.context.authors)}}
     Empty.
     {{/empty(site.context.authors)}}
     {{^empty(site.context.authors)}}
-    <div class="grid grid-221">
+    <div class="grid grid-321">
     {{#site.context.authors}}
         {{> blog.blocks.author}}
     {{/site.context.authors}}
     </div>
     {{/empty(site.context.authors)}}
     
-</div>
+</section>
 
 {{/main}}
 {{/html}}

@@ -1,25 +1,23 @@
 <div class="card">
     <div class="meta">
-        {{#featured}}<span class="">featured</span> &bull; {{/featured}}
         <time datetime="{{publication.html}}">{{publication.html}}</time>
         {{#readingTime}} &bull; <span class="reading-time">{{readingTime}} min read</span>{{/readingTime}}
+        {{#featured}} &bull; <span class="featured">featured</span>{{/featured}}
     </div>
 
+    <h2 class="title"><a href="{{permalink}}" target="">{{title}}</a></h2>
+    <p>{{description}}</p>
+    
     <div class="tag-list">
     {{#tags}}
         <a href="{{permalink}}"><small>{{title}}</small></a>
     {{/tags}}
     </div>
-    
-    <h2 class="title"><a href="{{permalink}}" target="">{{title}}</a></h2>
-    <!--p>{{description}}</p-->
-    
+
     <div class="author-list">
-        by
     {{#authors}}
         <a href="{{permalink}}">
-        {{title}}
-        {{#imageUrl}}<!--img class="small rounded" src="{{imageUrl}}" alt="{{title}}"-->{{/imageUrl}}
+        {{#imageUrl}}<img class="small rounded" src="{{imageUrl}}" alt="{{title}}">{{/imageUrl}}
         </a>
     {{/authors}}
     </div>

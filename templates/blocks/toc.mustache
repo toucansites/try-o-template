@@ -1,8 +1,14 @@
 <aside id="toc">
+    <h4>On this page</h4>
+        <ul>
+        <li class="first-level">
+            <a href="#"><strong>{{page.title}}</strong></a>
+        </li>
+    </ul>
     {{#empty(page.toc)}}
+    
     {{/empty(page.toc)}}
     {{^empty(page.toc)}}
-    <h4>On this page</h4>
     <ul>
     {{#page.toc}}
         <li class="first-level">

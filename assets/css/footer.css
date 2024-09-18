@@ -39,7 +39,6 @@
 }
 #site-footer div {
     padding-top: 16px;
-    margin-bottom: 16px;
     border-top: 2px solid var(--background-color-1);
 }
 #site-footer div small:last-child {

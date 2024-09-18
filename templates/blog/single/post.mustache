@@ -4,12 +4,13 @@
 <div class="article-with-toc">
     <div>
         <article class="post">
+            
+            <section>
             <div class="meta">
                 <time datetime="{{page.publication.html}}">{{page.publication.html}}</time>
-                {{#page.readingTime}} &middot; <span class="reading-time">{{page.readingTime}} min read</span>{{/page.readingTime}}
-                {{#page.featured}} &middot; <span class="featured">featured</span>{{/page.featured}}
+                {{#page.readingTime}} &bull; <span class="reading-time">{{page.readingTime}} min read</span>{{/page.readingTime}}
+                {{#page.featured}} &bull; <span class="featured">featured</span>{{/page.featured}}
             </div>
-            <section>
             
             {{& page.contents}}
                 
@@ -18,20 +19,18 @@
             <footer>
                 <br>
                 <time datetime="{{page.date}}">{{page.date}}</time>
-
                 
-                <div class="author-list">
-                {{#page.authors}}
-                    <a href="{{permalink}}">
-                    {{#imageUrl}}<img class="small rounded" src="{{imageUrl}}" alt="{{title}}">{{/imageUrl}}
-                    <span class="name">{{title}}</span>
-                    </a>
-                {{/page.authors}}
-                </div>
                 <div class="tag-list">
                 {{#page.tags}}
                     <a href="{{permalink}}"><small>{{title}}</small></a>
                 {{/page.tags}}
+                </div>
+                <div class="author-list">
+                {{#page.authors}}
+                    <a href="{{permalink}}">
+                    {{#imageUrl}}<img class="small rounded" src="{{imageUrl}}" alt="{{title}}">{{/imageUrl}}
+                    </a>
+                {{/page.authors}}
                 </div>
             </footer>
                         

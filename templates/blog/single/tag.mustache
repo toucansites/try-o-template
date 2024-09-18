@@ -1,16 +1,14 @@
 {{<html}}
 {{$main}}
 
-<div id="tag">
+<section id="tag">
     
     <header>
         {{#page.imageUrl}}<img class="medium" src="{{page.imageUrl}}" alt="{{page.title}}">{{/page.imageUrl}}
-        <h1>{{page.title}}</h1>
-        <p>{{page.description}}</p>
-        
+        {{& page.contents}}
     </header>
 
-    {{& page.contents}}
+    
     
     <p>{{count(page.posts)}} posts</p>
     
@@ -24,7 +22,8 @@
     {{/page.posts}}
     </div>
     {{/empty(page.posts)}}
-</div>
+
+</section>
 
 {{/main}}
 {{/html}}
