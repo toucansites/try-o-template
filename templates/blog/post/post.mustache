@@ -41,7 +41,7 @@
                 <h4>Related posts</h4>                
                 <div class="grid grid-221">
                 {{#page.related}}
-                    {{> blog.blocks.post}}
+                    {{> blog.partials.post}}
                 {{/page.related}}
                 </div>
                 {{/empty(page.related)}}
@@ -51,7 +51,7 @@
     </div>
     
     <div>
-        {{> blocks.toc }}
+        {{> partials.toc }}
     </div>
 </div>
 
