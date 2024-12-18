@@ -1,16 +1,14 @@
 #navigation {
     overflow: hidden;
-    border-bottom: 2px solid var(--background-color-1);
 }
 #navigation > a {
     display: block;
     line-height: 0;
     padding: 16px 8px;
-    text-align: center;
+    text-align: left;
 }
 #navigation > a img {
     height: 44px;
-    width: auto;
 }
 #navigation nav svg {
     width: 24px;
@@ -22,7 +20,7 @@
 #navigation #primary-menu-button + label {
     position: absolute;
     top: 16px;
-    left: 0;
+    right: 0;
     margin: 0;
     line-height: 0;
     padding: 12px;
@@ -37,9 +35,18 @@
 }
 #navigation .menu-items a {
     display: block;
-    padding: 16px;
-    border-top: 2px solid var(--background-color-1);
-    color: var(--text-color);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    color: var(--text-color-1);
 }
 #navigation .menu-items a:hover {
     color: var(--link-color-hover)

@@ -1,22 +1,28 @@
 {{<html}}
 {{$main}}
 
-<section id="authors">
+<div class="wrapper">
 
-    {{& page.contents}}
+    <div class="extra-space"> </div>
+
+    <div class="tag-title">
+        <h1>All authors<h1>
+    </div>
+
+    <div class="extra-space"> </div>
 
     {{#empty(site.context.authors)}}
     Empty.
     {{/empty(site.context.authors)}}
     {{^empty(site.context.authors)}}
-    <div class="grid grid-321">
+    <div class="authors-list-grid">
     {{#site.context.authors}}
-        {{> blog.partials.author}}
+        {{> partials.author}}
     {{/site.context.authors}}
     </div>
     {{/empty(site.context.authors)}}
-    
-</section>
+
+</div>
 
 {{/main}}
 {{/html}}
