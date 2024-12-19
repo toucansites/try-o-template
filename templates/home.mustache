@@ -4,22 +4,12 @@
 
     {{& page.contents}}
     
-    {{#empty(site.context.featured)}}
-    {{/empty(site.context.featured)}}
-    {{^empty(site.context.featured)}}
-    <div>
-    {{#site.context.featured}}
-        {{> blog.partials.post}}
-    {{/site.context.featured}}
-    </div>
-    {{/empty(site.context.featured)}}
-    
     {{#empty(site.context.posts)}}
     {{/empty(site.context.posts)}}
     {{^empty(site.context.posts)}}
     <div class="grid grid-321">
     {{#site.context.posts}}
-        {{> blog.partials.post}}
+        {{> partials.post}}
     {{/site.context.posts}}
     </div>
     {{/empty(site.context.posts)}}

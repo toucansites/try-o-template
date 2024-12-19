@@ -1,9 +1,13 @@
 {{<html}}
 {{$main}}
 
-{{& page.contents}}
+<div class="wrapper">
 
-<div id="posts" class="wrapper">
+    <div class="extra-space"> </div>
+
+    <div class="tag-title">
+        <h1>Browse all posts<h1>
+    </div>
 
     {{#empty(pagination.data.post)}}
     Empty.
@@ -11,11 +15,11 @@
     {{^empty(pagination.data.post)}}
     <div class="grid grid-321">
     {{#pagination.data.post}}
-        {{> blog.partials.post}}
+        {{> partials.post}}
     {{/pagination.data.post}}
     </div>
     {{/empty(pagination.data.post)}}
-    
+
     {{#empty(pagination.links.post)}}
     {{/empty(pagination.links.post)}}
     {{^empty(pagination.links.post)}}
