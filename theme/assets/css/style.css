@@ -652,3 +652,15 @@ blockquote p {
 .shares svg:hover {
     color: var(--link-color-hover2);
 }
+
+.page404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.page404 svg {
+    max-width: 120px;
+    color: var(--text-color-2);
+}
