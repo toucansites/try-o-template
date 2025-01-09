@@ -1,0 +1,26 @@
+<footer id="site-footer">
+
+    <div class="wrapper">
+        <div class="section-divider" />
+    </div>
+
+    <b><small>Social</small></b>
+    <div class="footer-social">
+        {{#footer-socials}}
+            <small><a href="{{url}}" target="_blank">{{title}}</a></small>
+        {{/footer-socials}}
+        {{^footer-socials}}
+            <small>No socials links</small>
+        {{/footer-socials}}
+    </div>
+
+    <div class="footer-bottom">
+        <div id="footer-bottom-div1">
+            <small>{{site.title}} &copy; {{year}}</small>
+        </div>
+        <div id="footer-bottom-div2">
+            <small>This site was generated using <a href="https://swift.org/" target="_blank">Swift</a> & <a href="https://github.com/binarybirds/toucan" target="_blank">Toucan</a>.</small>
+        </div>
+    </div>
+    
+</footer>

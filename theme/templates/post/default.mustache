@@ -1,0 +1,63 @@
+{{<html}}
+{{$main}}
+
+<div>
+
+    <div class="extra-space"> </div>
+
+    <div class="article-class">
+        <article>
+
+            <div class="post-meta">
+
+                <time datetime="{{page.publication.html}}">
+                    {{page.publication.html}}
+                </time>
+                |
+                {{#page.authors}}
+                    <a href="{{permalink}}">{{title}}</a>
+                {{/page.authors}}
+            
+            </div>
+            
+            {{& page.contents}}
+                
+            <h4>TAGS</h4> 
+            <div class="tag-list">
+                {{#page.tags}}
+                    <a href="{{permalink}}"><small>{{title}}</small></a>
+                {{/page.tags}}
+            </div>
+
+            <h4>SHARE VIA</h4> 
+            {{#page.permalink}}
+                {{> partials.share}}
+             {{/page.permalink}}
+                        
+        </article>
+    </div>
+
+    <div class="wrapper">
+        <div class="section-divider" />
+    </div>
+
+    <div class="wrapper">
+
+        <h4>RELATED POSTS</h4>    
+        {{#empty(page.related)}}
+        No related posts.
+        {{/empty(page.related)}}
+        {{^empty(page.related)}}
+        <div class="grid grid-221">
+            {{#page.related}}
+                {{> partials.post}}
+            {{/page.related}}
+            </div>
+        {{/empty(page.related)}}
+
+    </div>
+
+</div>
+
+{{/main}}
+{{/html}}
