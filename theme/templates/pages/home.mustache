@@ -1,0 +1,50 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <div class="extra-space"> </div>
+
+    <h1>Featured posts</h1>
+
+    {{#empty(site.context.featured)}}
+    No featured posts yet.
+    {{/empty(site.context.featured)}}
+    {{^empty(site.context.featured)}}
+    <div class="grid grid-221">
+        {{#site.context.featured}}
+        {{> partials.post}}
+        {{/site.context.featured}}
+    </div>
+    {{/empty(site.context.featured)}}
+</div>
+
+<div class="wrapper">
+    <div class="section-divider" />
+</div>
+
+<div class="wrapper">
+
+    <h4>Most recents posts</h4>
+
+    {{#empty(site.context.recent)}}
+    No recent posts yet.
+    {{/empty(site.context.recent)}}
+    {{^empty(site.context.recent)}}
+    <div class="grid grid-221">
+        {{#site.context.recent}}
+        {{> partials.post}}
+        {{/site.context.recent}}
+    </div>
+    {{/empty(site.context.recent)}}
+
+    <div class="more-centered">
+        <a class="custom-button" href="/posts/page/1">All posts</a>
+    </div>
+    
+</div>
+
+{{/main}}
+{{/html}}
+
+

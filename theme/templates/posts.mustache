@@ -1,0 +1,34 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <div class="extra-space"> </div>
+
+    <h1>Browse all posts</h1>
+
+    {{#empty(pagination.data.post)}}
+    Empty.
+    {{/empty(pagination.data.post)}}
+    {{^empty(pagination.data.post)}}
+    <div class="grid grid-321">
+    {{#pagination.data.post}}
+        {{> partials.post}}
+    {{/pagination.data.post}}
+    </div>
+    {{/empty(pagination.data.post)}}
+
+    {{#empty(pagination.links.post)}}
+    {{/empty(pagination.links.post)}}
+    {{^empty(pagination.links.post)}}
+    <div class="pagination">
+    {{#pagination.links.post}}
+        {{> partials.pagination}}
+    {{/pagination.links.post}}
+    </div>
+    {{/empty(pagination.links.post)}}
+
+</div>
+
+{{/main}}
+{{/html}}

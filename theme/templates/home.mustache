@@ -1,0 +1,29 @@
+{{<html}}
+{{$main}}
+<section id="blog">
+
+    {{& page.contents}}
+    
+    {{#empty(site.context.posts)}}
+    {{/empty(site.context.posts)}}
+    {{^empty(site.context.posts)}}
+    <div class="grid grid-321">
+    {{#site.context.posts}}
+        {{> partials.post}}
+    {{/site.context.posts}}
+    </div>
+    {{/empty(site.context.posts)}}
+    
+    {{#empty(site.context.pagination)}}
+    {{/empty(site.context.pagination)}}
+    {{^empty(site.context.pagination)}}
+    <div class="pagination">
+    {{#site.context.pagination}}
+        {{> partials.pagination}}
+    {{/site.context.pagination}}
+    </div>
+    {{/empty(site.context.pagination)}}
+</section>
+
+{{/main}}
+{{/html}}

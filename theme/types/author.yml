@@ -1,0 +1,36 @@
+id: author
+template: author.default
+
+properties:
+    priority:
+        type: int
+        required: true
+    x:
+        type: string
+        required: false
+    linkedin:
+        type: string
+        required: false
+    facebook:
+        type: bool
+        required: false
+    instagram:
+        type: bool
+        required: false
+    tiktok:
+        type: bool
+        required: false
+    
+context:
+    site:
+        authors:
+            sort: title
+            order: asc
+
+    local:
+        posts:
+            references: post
+            foreignKey: authors
+            sort: publication
+            order: desc
+            limit: 50
