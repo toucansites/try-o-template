@@ -1,7 +1,7 @@
 ---
 type: post
 title: Deploy to a GitHub Page
-description: This guide will walk you through how to deploy to a github page
+description: This guide will walk you through how to deploy to a GitHub Page
 publication: 2025-01-11 00:00:00
 tags:
   - deployment
@@ -12,7 +12,7 @@ featured: false
 
 # Deploy to a GitHub Page
 
-This guide explains how to deploy your generated content from the `docs` folder to a GitHub Page.
+This guide explains how to deploy your site’s generated content from the `docs` folder to a GitHub Page
 
 ---
 
@@ -22,7 +22,7 @@ This guide explains how to deploy your generated content from the `docs` folder 
    - Go to [GitHub](https://github.com/) and log in.
    - Click the `+` button at the top right and select **New Repository**.
    - Fill in the repository name (e.g., `try-o-theme-docs`) and set it to **Public**.
-   - Initialize the repository with any files (e.g., README).
+   - You can initialize the repository with files like a README, if needed.
 
 2. **Clone the Repository Locally**:
    - Clone the repository to your computer:
@@ -36,7 +36,7 @@ This guide explains how to deploy your generated content from the `docs` folder 
 ## Step 2: Generate the `docs` Folder
 
 1. **Ensure Your Site Content is Ready**:
-   - The content, images, and pages should be in the **`docs` folder** created by Toucan.
+   - Ensure that the content, images, and pages are correctly generated in the **docs** folder by Toucan.
 
 2. **Preview Locally** (Optional):
    - Use the generator’s serve command to preview your site:
@@ -50,21 +50,21 @@ This guide explains how to deploy your generated content from the `docs` folder 
 
 ## Step 3: Add the `docs` Folder Content
 
-1. **Navigate to Your Repository Folder**:
+1. **Navigate to Your Local Repository Folder**:
 
   ```
   cd my-github-page
   ```
 
 2.	Copy the Content of the docs Folder:
-	•	Replace the contents of the repository with the content of your generated docs folder:
+	- Copy the contents of your generated **docs** folder into your repository directory:
 	
   ```
   cp -r /path/to/your/docs/* .
   ```
 
 3.	Verify Files:
-	•	Ensure the root of your repository contains files like index.html, about.html, and other assets like CSS, JS, and images.
+	- Ensure the root of your repository contains files like index.html, about.html, and other assets like CSS, JS, and images.
 
 ##  Step 4: Push the docs Folder to GitHub
 
@@ -75,7 +75,7 @@ This guide explains how to deploy your generated content from the `docs` folder 
 	git commit -m "Add generated site content"
 	```
 
-2.	Push to GitHub:
+2.	Push the Changes to GitHub:
 
 	```
 	git push origin main
@@ -83,12 +83,12 @@ This guide explains how to deploy your generated content from the `docs` folder 
 
 ##  Step 5: Enable GitHub Pages
 
-1.	Go to Repository Settings in your GitHub repository, click on Settings.
+1.	Go to the Settings tab in your GitHub repository.
 
 2.	Enable GitHub Pages:
 	- Scroll down to the Pages section.
-	- Under Source, select the branch to main (or another branch where you committed your files).
-	- Choose the / (docs) folder as the source.
+	- Under Source, select the branch where you committed your files (e.g., main).
+	- Choose the **/docs** folder as the source.
 	- Click Save.
 
 3.	Check Your Published Site:
@@ -102,16 +102,16 @@ This guide explains how to deploy your generated content from the `docs` folder 
 
 1.	Visit the URL provided by GitHub Pages.
 
-2.	Ensure the site is displayed correctly and all links work.
+2.  Ensure that the site displays correctly and all links function as expected.
 
 3.	If something is missing:
 	- Check your docs folder structure for completeness (ensure all assets like CSS and images are included).
-	- Update your links in the content if needed to be relative.
+	- If needed, update your content links to be relative.
 
 
 ##  Step 7: Maintain and Update the Site
 
-1.	Generate Updated docs Content:
+1.	Regenerate the **docs** Folder Content:
 	- Whenever you update your content, regenerate the docs folder using your site generator:
 	
 	```
@@ -128,9 +128,9 @@ This guide explains how to deploy your generated content from the `docs` folder 
 	```
 
 3.	Verify the Updates:
-	- Check your site URL to ensure the new content appears correctly.
+	- Visit your site URL to verify that the new content appears correctly.
 
 ## Additional Notes
-- Custom Domain: add a custom domain by creating a CNAME file in the root of your repository with your domain name.
+- To use a custom domain, create a CNAME file in the root of your repository and add your domain name.
 
 This guide ensures you can deploy and maintain your generated content easily using GitHub Pages. 

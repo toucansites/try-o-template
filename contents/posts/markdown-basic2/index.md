@@ -1,7 +1,7 @@
 ---
 type: post
 title: Markdown Basics - Links, Images, and Tables
-description: This guide will walk you through how to customize the footer
+description: This guide will walk you through how to use links, images, and tables in Markdown
 publication: 2025-01-12 00:00:00
 tags:
   - markdown
@@ -10,9 +10,9 @@ authors:
 featured: false
 ---
 
-# Markdown Basics 2 - Links, Images, and Tables
+# Markdown Basics - Links, Images, and Tables
 
-Markdown allows you to include links, images, and tables in your documents with simple syntax.
+Markdown makes it easy to add links, images, and tables to your documents using simple syntax.
 
 ---
 
@@ -35,7 +35,7 @@ Add a title by including text in quotes after the URL:
 
 ### 1. Basic Images
 
-Similar to links, but add an exclamation mark ! at the beginning:
+Similar to links, but with an exclamation mark `!` at the beginning:
 
 ```
 ![Alt Text](https://example.com/image.jpg)
@@ -51,7 +51,7 @@ Add a title in quotes for extra context:
 
 ### Tables
 
-Create tables with pipes | and dashes -:
+Use pipes `|` and dashes `-` to create tables:
 
 ```
 | Syntax      | Description |
@@ -76,10 +76,10 @@ Use triple backticks for multi-line code:
 
 ```
 function example() {
-  console.log(“Hello, Markdown!”);
+  console.log("Hello, Markdown!");
 }
 ```
 
 ### Wrapping Up
 
-Markdown provides a simple way to include links, images, tables, and code in your content. Master these features to make your documents stand out!
+Markdown provides a simple way to include links, images, tables, and code in your content. Master these features to create well-structured and visually appealing documents!

@@ -1,7 +1,7 @@
 ---
 type: post
 title: Create a custom page in navigation
-description: This guide will walk you through how to create a custom page in navigation
+description: This guide will walk you through how to create a custom page and add it to the navigation menu
 publication: 2025-01-15 00:00:00
 tags:
   - content
@@ -12,16 +12,17 @@ featured: false
 
 # Create a Custom Page in Navigation
 
-Adding a custom page is a great way to expand your site's functionality by including pages like "Contact Us," "FAQ," or any other static content. Follow the steps below to create a custom page and add it to the navigation menu in **Try-O-Theme**.
+Adding a custom page is a great way to enhance your site’s functionality by including pages like ‘Contact Us,’ ‘FAQ,’ or other static content. Follow the steps below to create a custom page and add it to the navigation menu in **Try-O-Theme**.
 
 ---
 
 ### Step 1: Edit the Navigation Menu
 
 1. Open the **src/contents/index.yaml** file in your project directory.
-   - This file controls the navigation menu displayed on your site.
+   - This file manages the navigation menu displayed on your site.
 
 2. Add a new entry under the `navigation` section for your custom page. Example:
+
    ```
    navigation:
      - label: "About"
@@ -43,6 +44,7 @@ Adding a custom page is a great way to expand your site's functionality by inclu
 
 1. Navigate to the **src/contents/** folder.
 2. Create a new directory for your custom page. For example:
+
    ```bash
    mkdir src/contents/contact-us
    ```
@@ -52,9 +54,10 @@ Adding a custom page is a great way to expand your site's functionality by inclu
 ### Step 3: Add an `index.md` File
 
 1. Inside the new directory (e.g., `src/contents/contact-us`), create a file named `index.md`.
-   - This file contains metadata and content for the custom page.
+   - This file stores the metadata and content for the custom page.
 
 2. Add the following content to the `index.md` file:
+
    ```
    ---
    title: "Contact Us"
@@ -73,7 +76,8 @@ Adding a custom page is a great way to expand your site's functionality by inclu
 
 ### Step 4: Add Content to the Page
 
-Below the metadata in `index.md`, add the content of your custom page in Markdown format. Example:
+Below the metadata in `index.md`, write the content of your custom page using Markdown. Example:
+
 ```
 ## Contact Us
 
@@ -88,10 +92,11 @@ City, Country 12345
 
 ### Step 5: Create a New Template (Optional)
 
-1. If the default template (`pages.default_page`) does not suit your custom page, create a new Mustache template:
+1. If the default template `pages.default_page` does not fit your needs, create a custom Mustache template:
    - Navigate to **src/themes/default/templates/pages/**.
    - Create a new Mustache file, e.g., `contact_page.mustache`.
 2. Update the `template` field in the custom page's metadata to use your new template:
+
    ```
    template: pages.contact_page
    ```
@@ -100,25 +105,27 @@ City, Country 12345
 
 ### Step 6: Regenerate the Site
 
-After creating the custom page, regenerate the site to apply the changes:
+Once the custom page is created, regenerate the site to apply the changes:
 
 1. Open your terminal and navigate to your project directory.
 2. Run the following command:
+
    ```
    toucan generate
    ```
-3. This will update the site's content and navigation.
+3. This updates the site’s content and refreshes the navigation menu.
 
 ---
 
 ### Step 7: Verify the Custom Page
 
 1. Start the local development server:
+
    ```
    toucan serve
    ```
 2. Open your browser and go to [http://localhost:3000/contact-us/](http://localhost:3000/contact-us/).
-3. Verify that the custom page appears and is accessible from the navigation menu.
+3. Ensure that the custom page is displayed correctly and can be accessed from the navigation menu.
 
 ---
 
