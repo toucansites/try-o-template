@@ -14,10 +14,11 @@ Before installing Toucan, ensure your environment is properly set up:
 
 2. **Verify Swift Installation**:
    - Open a terminal and type:
+   
      ```
      swift --version
      ```
-   - You should see the installed Swift version. If not, troubleshoot your installation.
+   - You should see the installed Swift version. If not, check for installation errors to ensure Swift is correctly set up.
 
 ---
 
@@ -27,6 +28,7 @@ Before installing Toucan, ensure your environment is properly set up:
 
 1. Open your terminal.
 2. Clone the Toucan repository:
+
    ```
    git clone https://github.com/toucansites/toucan.git
    cd toucan
@@ -35,12 +37,14 @@ Before installing Toucan, ensure your environment is properly set up:
 ### Step 2: Build and Install Toucan
 
 1. Use `make` to build and install Toucan:
+
    ```
    make install
    ```
    - This command compiles the Toucan source code and installs it on your system.
 
 2. Verify the installation:
+
    ```
    which toucan
    ```
@@ -53,6 +57,7 @@ Before installing Toucan, ensure your environment is properly set up:
 ### Step 1: Initialize a New Site
 
 1. Create a new site by running:
+
    ```
    toucan init my-site
    ```
@@ -60,11 +65,12 @@ Before installing Toucan, ensure your environment is properly set up:
    - Toucan will generate a folder structure with default configuration files and templates.
 
 2. Navigate to your new site folder:
+
    ```
    cd my-site
    ```
 
-After initializing a site, your project will have the following structure:
+Once your site is initialized, your project will have the following structure:
 
 ```
 my-site/
@@ -79,6 +85,7 @@ my-site/
 ### Step 2: Generate Your Site
 
 1. Run the following command to generate the static files:
+
    ```
    toucan generate
    ```
@@ -86,9 +93,10 @@ my-site/
 
 ### Step 3: Watch for changes (only for macOS for now)
 
-The watch command monitors a source directory for changes and automatically rebuilds the distribution files, regenerating the site whenever changes are detected.
+The watch command monitors a source directory for changes and automatically regenerates the site whenever changes are detected.
 
-1. Run the following command to generate the static files:
+1. Run the following command to enable file watching:
+
    ```
    toucan watch
    ```
@@ -96,10 +104,12 @@ The watch command monitors a source directory for changes and automatically rebu
 ### Step 4: Serve Your Site Locally
 
 1. Start a local development server:
+
    ```
    toucan serve
    ```
 2. Open your browser and navigate to:
+
    ```
    http://localhost:3000
    ```
@@ -109,10 +119,10 @@ The watch command monitors a source directory for changes and automatically rebu
 
 ## Copy Theme and Default Contents
 
-1.	From the zip file copy all contents from the **theme** folder into the **my-site/src/themes/default folder**.
-2.	From the zip file copy all contents from copy all content from the **contents** folder into the **my-site/src/content** folder.
+1.	Copy all files from the **theme** folder in the ZIP file into **my-site/src/themes/default** folder.
+2.	Copy all files from the **contents** folder in the ZIP file into  **my-site/src/content** folder.
 
-After successfull file copies, your project will have the following structure:
+After successful file copies, your project will have the following structure:
 
 ```
 my-site/
@@ -137,7 +147,7 @@ my-site/
 The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
 
 1.	Tags:
-	* A sample tag directory is provided in src/contents/tags/.
+	* Multiple tags are provided in **src/contents/tags/**.
 	* This demonstrates how tags are created and displayed.
 2.	Authors:
 	* A test author is included in src/contents/authors/.
@@ -155,13 +165,13 @@ The theme comes with a variety of sample content to help you quickly understand 
 7.	Home Page Content:
 	* A preconfigured home page setup is included in src/contents/home/.
 
-You can use these sample contents as a reference or starting point for your project. Once you’re familiar with the structure, replace them with your own custom content.
+You can use these sample files as a reference or starting point for your project. Once you’re familiar with the structure, replace them with your own custom content.
 
 Happy building with Toucan!
 
 ## Troubleshooting
 
-If you encounter issues during installation or setup, consider the following:
+If you encounter any issues during installation or setup, try the following steps:
 
 - Ensure Swift is installed and correctly configured.
 - Check your `PATH` to ensure the Toucan binary is accessible.

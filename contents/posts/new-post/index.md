@@ -1,7 +1,7 @@
 ---
 type: post
 title: Add New Post
-description: This guide will walk you through how to add new post
+description: This guide will walk you through how to add a new post.
 publication: 2025-01-16 00:00:00
 tags:
   - content
@@ -12,14 +12,14 @@ featured: false
 
 # Add a New Post
 
-Adding new posts is essential for keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Theme**.
+Adding new posts is essential to keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Theme**.
 
 ---
 
 ### Step 1: Navigate to the Posts Directory
 
 1. Open your project directory.
-2. Go to the **src/contents/posts/** folder. This is where all post-related content is stored.
+2. Go to the **src/contents/posts/** folder. This folder contains all post-related content.
 
 ---
 
@@ -27,19 +27,21 @@ Adding new posts is essential for keeping your site updated with fresh content. 
 
 1. Create a new directory for your post:
    - Name the folder based on the post title or a short identifier. For example:
+
      ```
      mkdir src/contents/posts/my-first-post
      ```
-   - Use lowercase and hyphens to keep the folder name consistent.
+   - Use lowercase letters and hyphens to maintain consistency in folder naming.
 
 ---
 
 ### Step 3: Add an `index.md` File
 
 1. Inside the new directory (e.g., `src/contents/posts/my-first-post`), create a file named `index.md`.
-   - This file contains metadata and content for the post.
+   - This file stores the metadata and content for the post.
 
 2. Add the following content to the `index.md` file:
+
    ```
    ---
    type: post
@@ -59,7 +61,7 @@ Adding new posts is essential for keeping your site updated with fresh content. 
    - **type**: Always set to `post`.
    - **title**: The title of the post as it will appear on the site.
    - **description**: A brief description or summary of the post.
-   - **publication**: The publication date in `YYYY-MM-DD HH:MM:SS` format.
+   - **publication**: Specifies the publication date in the `YYYY-MM-DD HH:MM:SS` format.
    - **tags**: A list of tags associated with the post.
    - **authors**: A list of authors who contributed to the post.
    - **featured**: Set to `true` if the post should appear in the featured section of the homepage.
@@ -68,7 +70,8 @@ Adding new posts is essential for keeping your site updated with fresh content. 
 
 ### Step 4: Write the Post Content
 
-1. Below the metadata in `index.md`, add the full content of your post in Markdown format. Example:
+1. Below the metadata in `index.md`, write the full content of your post using Markdown. Example:
+
    ```
    ---
    type: post
@@ -98,10 +101,12 @@ Adding new posts is essential for keeping your site updated with fresh content. 
 ### Step 5: Add Images (Optional)
 
 1. If your post includes images, create an **assets** folder inside the post directory:
+
    ```
    mkdir src/contents/posts/my-first-post/assets
    ```
-2. Add your images to the **assets** folder and reference them in your Markdown content. Example:
+2. Place your images in the **assets** folder and reference them in your Markdown content. Example:
+
    ```markdown
    ![My Image](./assets/my-image.jpg)
    ```
@@ -110,25 +115,27 @@ Adding new posts is essential for keeping your site updated with fresh content. 
 
 ### Step 6: Regenerate the Site
 
-After creating the post, you need to regenerate your site to apply the changes:
+Once the post is created, regenerate your site to apply the changes:
 
 1. Open your terminal and navigate to your project directory.
 2. Run the following command:
+
    ```
    toucan generate
    ```
-3. This will update the site's content and templates to include the new post.
+3. This updates the site’s content and templates to reflect the new post.
 
 ---
 
 ### Step 7: Verify the Post
 
 1. Start the local development server:
+
    ```
    toucan serve
    ```
 2. Open your browser and go to [http://localhost:3000](http://localhost:3000).
-3. Navigate to the **Posts** page or homepage to confirm that the new post appears.
+3. Go to the **Posts** page or homepage to verify that the new post is displayed.
 
 ---
 
