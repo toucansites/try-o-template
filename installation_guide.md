@@ -121,9 +121,11 @@ The watch command monitors a source directory for changes and automatically rege
 
 ## Copy Theme and Default Contents
 
-1. Copy all files from the **try-o-theme-0.0.4/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default folder**. If prompted, you may overwrite or replace existing files.
+1. Delete all files from the **my-site/src/themes/default** folder and from the **my-site/src/contents** folder.
 
-2. Copy all files from the **try-o-theme-0.0.4/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder. If prompted, you may overwrite or replace existing files.
+2. Copy all files from the **try-o-theme-0.0.4/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
+
+3. Copy all files from the **try-o-theme-0.0.4/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
 
 	After successful file copies, your project will have the following structure:
 
@@ -148,7 +150,7 @@ The watch command monitors a source directory for changes and automatically rege
 	            └── types
 	```
 
-3. Once all files are successfully copied, regenerate your site to apply the changes:
+4. Once all files are successfully copied, regenerate your site to apply the changes:
 	- First run the following command:
 
 	```
@@ -159,10 +161,9 @@ The watch command monitors a source directory for changes and automatically rege
    ```
    toucan serve
    ```
-2. Open your browser and go to [http://localhost:3000](http://localhost:3000).
-3. Go to the **Authors** page to verify that the new author is displayed.
-
 The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
+
+## Default Contents
 
 1.	Tags:
 	* Multiple tags are provided in **src/contents/tags/**.
