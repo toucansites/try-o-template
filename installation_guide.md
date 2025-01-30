@@ -120,7 +120,7 @@ The watch command monitors a source directory for changes and automatically rege
 ## Copy Theme and Default Contents
 
 1.	Copy all files from the **theme** folder in the ZIP file into **my-site/src/themes/default** folder.
-2.	Copy all files from the **contents** folder in the ZIP file into  **my-site/src/content** folder.
+2.	Copy all files from the **contents** folder in the ZIP file into  **my-site/src/contents** folder.
 
 After successful file copies, your project will have the following structure:
 
@@ -150,20 +150,20 @@ The theme comes with a variety of sample content to help you quickly understand 
 	* Multiple tags are provided in **src/contents/tags/**.
 	* This demonstrates how tags are created and displayed.
 2.	Authors:
-	* A test author is included in src/contents/authors/.
+	* A test author is included in **src/contents/authors/**.
 	* This shows how to add and customize author profiles.
 3.	Posts:
-	* Several sample posts are included in src/contents/posts/.
+	* Several sample posts are included in **src/contents/posts/**.
 	* These showcase how to write Markdown-based posts with metadata and images.
 4.	404 Page:
-	* A preconfigured “Page Not Found” template is located in src/contents/404/.
+	* A preconfigured “Page Not Found” template is located in **src/contents/404/**.
 5.	About Page:
-	* A sample “About” page is included in src/contents/about/ to demonstrate static page creation.
+	* A sample “About” page is included in **src/contents/about/** to demonstrate static page creation.
 6.	Assets:
-	* Default images and icons are stored in src/contents/assets/.
+	* Default images and icons are stored in **src/contents/assets/**.
 	* Includes logos, placeholders, and theme-specific assets.
 7.	Home Page Content:
-	* A preconfigured home page setup is included in src/contents/home/.
+	* A preconfigured home page setup is included in **src/contents/home/**.
 
 You can use these sample files as a reference or starting point for your project. Once you’re familiar with the structure, replace them with your own custom content.
 
