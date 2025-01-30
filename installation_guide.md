@@ -58,11 +58,12 @@ Before installing Toucan, ensure your environment is properly set up:
 
 1. Create a new site by running:
 
+   - Run the following command in your terminal, replacing **my-site** with your desired project folder name:
+   
    ```
    toucan init my-site
    ```
-   - Replace `my-site` with the name of your project folder.
-   - Toucan will generate a folder structure with default configuration files and templates.
+   - Toucan will generate a folder with your chosen name, including default configuration files and templates.
 
 2. Navigate to your new site folder:
 
@@ -80,6 +81,7 @@ my-site/
 ├── docs/              # Folder containing generated static files (HTML, CSS, etc.)
 └── src/               # Source files for content and templates
 ```
+
 ---
 
 ### Step 2: Generate Your Site
@@ -119,30 +121,46 @@ The watch command monitors a source directory for changes and automatically rege
 
 ## Copy Theme and Default Contents
 
-1.	Copy all files from the **theme** folder in the ZIP file into **my-site/src/themes/default** folder.
-2.	Copy all files from the **contents** folder in the ZIP file into  **my-site/src/contents** folder.
+1. Copy all files from the **try-o-theme-0.0.4/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default folder**. If prompted, you may overwrite or replace existing files.
 
-After successful file copies, your project will have the following structure:
+2. Copy all files from the **try-o-theme-0.0.4/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder. If prompted, you may overwrite or replace existing files.
 
-```
-my-site/
-├── docs
-└── src/
-    ├── contents/
-    │   ├── 404
-    │   ├── about
-    │   ├── assets
-    │   ├── authors
-    │   ├── home
-    │   ├── lists
-    │   ├── posts
-    │   └── tags
-    └── themes/
-        └── default/
-            ├── assets
-            ├── templates
-            └── types
-```
+	After successful file copies, your project will have the following structure:
+
+	```
+	my-site/
+	├── docs
+	└── src/
+	    ├── contents/
+	    │   ├── 404
+	    │   ├── about
+	    │   ├── assets
+	    │   ├── authors
+	    │   ├── home
+	    │   ├── lists
+	    │   ├── posts
+	    │   ├── tags
+	    │   └── index.yml
+	    └── themes/
+	        └── default/
+	            ├── assets
+	            ├── templates
+	            └── types
+	```
+
+3. Once all files are successfully copied, regenerate your site to apply the changes:
+	- First run the following command:
+
+	```
+	toucan generate
+	```
+	- After successful generation, run the following command:
+
+   ```
+   toucan serve
+   ```
+2. Open your browser and go to [http://localhost:3000](http://localhost:3000).
+3. Go to the **Authors** page to verify that the new author is displayed.
 
 The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
 
