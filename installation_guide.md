@@ -4,6 +4,10 @@ Toucan is a Swift-based static site generator designed for simplicity and perfor
 
 ---
 
+## Disclaimer
+
+Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+
 ## Prerequisites
 
 Before installing Toucan, ensure your environment is properly set up:

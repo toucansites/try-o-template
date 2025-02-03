@@ -204,6 +204,12 @@ img.large {
     display: block;
 }
 
+.article-class img {
+    object-fit: cover;
+    border-radius: 24px;
+    background: var(--background-color);
+}
+
 .article-class>div {
     position: relative;
 }

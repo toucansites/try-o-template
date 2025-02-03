@@ -14,6 +14,10 @@ featured: true
 
 ![Cover Image](./assets/cover.jpg)
 
+## Disclaimer
+
+Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+
 ## Introduction
 
 Thank you for purchasing Try-O-Theme! This theme is built on the powerful Toucan static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
