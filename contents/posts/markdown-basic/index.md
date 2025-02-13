@@ -12,7 +12,7 @@ featured: false
 
 # Markdown Basics - Text Formatting and Lists
 
-Markdown is a lightweight markup language used to format plain text. Here’s how to use its essential syntax:
+Markdown is a lightweight markup language used to format plain text. Here’s how to use its essential syntax.
 
 ---
 
