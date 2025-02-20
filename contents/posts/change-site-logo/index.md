@@ -12,7 +12,7 @@ featured: false
 
 # Change the Site Logo
 
-The **site logo** is one of the key elements of your site's branding. In **Try-O-Theme**, the logo is located in the `assets` folder and can be customized easily. Follow the steps below to update your site logo.
+The **site logo** is one of the key elements of your site's branding. In **Try-O-Theme**, the logo is located in the **assets** folder and can be customized easily. Follow the steps below to update your site logo.
 
 ---
 
@@ -40,11 +40,11 @@ The **site logo** is one of the key elements of your site's branding. In **Try-O
 ## Step 3: Replace the Logo Files
 
 1. Rename your custom logos to match the default logo file names:
-   - `logo.png` (for the primary logo)
-   - `logo~dark.png` (for the dark mode logo)
-   
+   - **logo.png** (for the primary logo)
+   - **logo~dark.png** (for the dark mode logo)
+
 2. Copy your custom logo files into the **src/contents/assets/images/logos/** directory.
-   - Overwrite the existing `logo.png` and `logo~dark.png` files.
+   - Overwrite the existing **logo.png** and **logo~dark.png** files.
 
 ---
 
@@ -55,9 +55,10 @@ After replacing the logo files, you need to regenerate your site for the changes
 1. Open your terminal and navigate to your project directory.
 2. Run the following command:
 
-   ```
+   ```bash
    toucan generate
    ```
+
 3. This command will process the updated assets and regenerate the site.
 
 ---
@@ -66,9 +67,10 @@ After replacing the logo files, you need to regenerate your site for the changes
 
 1. Start the local development server to preview the updated site:
 
-   ```
+   ```bash
    toucan serve
    ```
+
 2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 3. Verify that:
    - The new logo is displayed on the site.
@@ -79,7 +81,8 @@ After replacing the logo files, you need to regenerate your site for the changes
 ## Step 6: Troubleshooting
 
 If the updated logo does not appear, check the following:
-1. **File Naming**: Ensure that your custom files are named exactly `logo.png` and `logo~dark.png`.
+
+1. **File Naming**: Ensure that your custom files are named exactly **logo.png** and **logo~dark.png**.
 2. **File Path**: Confirm the files are located in **src/contents/assets/images/logos/**.
 3. **Cache**: Clear your browser cache or use an incognito window to view the changes.
 

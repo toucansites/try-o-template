@@ -490,13 +490,6 @@ details div p {
     }
 }
 
-blockquote p {
-    font-style: italic;
-    color: var(--text-color-3);
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
 .more-centered {    
     text-align: center;
     margin-top: 45px;
@@ -559,4 +552,11 @@ blockquote p {
 .page404 svg {
     max-width: 120px;
     color: var(--text-color-2);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--text-color);
+    padding-left: 15px;
+    color: var(--text-color);
 }

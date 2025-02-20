@@ -20,7 +20,7 @@ Toucan product is currently in its beta phase, which means you might encounter i
 
 ## Introduction
 
-Thank you for purchasing Try-O-Theme! This theme is built on the powerful Toucan, our static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
+Thank you for purchasing Try-O-Theme! This theme is built on the powerful Toucan static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
 
 With Markdown, you can write formatted text in plain-text files, which Toucan converts into HTML. Mustache templates allow you to customize the layout and presentation of your site with clean, readable syntax. Together, they give you full control over both the content and appearance of your site.
 

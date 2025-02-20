@@ -16,12 +16,12 @@ The footer is an important section of your website, often used to display additi
 
 ---
 
-### Step 1: Edit the Footer Content
+## Step 1: Edit the Footer Content
 
 1. Open the **src/contents/index.yaml** file in your project directory.
    - This file contains the global configuration for your site, including footer content.
 
-2. Locate the `footer-socials` section. Example:
+2. Locate the **footer-socials** section. Example:
 
    ```yaml
    footer-socials:
@@ -41,7 +41,7 @@ The footer is an important section of your website, often used to display additi
 
 ---
 
-### Step 2: Add Custom Links or Text
+## Step 2: Add Custom Links or Text
 
 1. To include additional text (e.g., copyright notices or custom links), locate or add a section like this in **index.yaml**:
 
@@ -59,11 +59,12 @@ The footer is an important section of your website, often used to display additi
 
 ---
 
-### Step 3: Update Footer Styles (Optional)
+## Step 3: Update Footer Styles (Optional)
 
-1. Navigate to the **src/themes/default/templates/partials/** directory. The footer layout is defined in the Mustache file: `footer.mustache`.
+1. Navigate to the **src/themes/default/templates/partials/** directory. The footer layout is defined in the Mustache file: **footer.mustache**.
 
-2. Edit the `footer.mustache` to adjust the structure, style, or additional content. Example:
+2. Edit the **footer.mustache** to adjust the structure, style, or additional content. Example:
+
    ```html
    <footer>
      <div class="footer-links">
@@ -83,37 +84,38 @@ The footer is an important section of your website, often used to display additi
 
 ---
 
-### Step 4: Regenerate the Site
+## Step 4: Regenerate the Site
 
 After updating the footer content or styles, regenerate the site to apply the changes:
 
 1. Open your terminal and navigate to your project directory.
 2. Run the following command:
 
-   ```
+   ```bash
    toucan generate
    ```
 
 ---
 
-### Step 5: Verify the Footer Changes
+## Step 5: Verify the Footer Changes
 
 1. Start the local development server:
 
-   ```
+   ```bash
    toucan serve
    ```
+
 2. Open your browser and go to [http://localhost:3000](http://localhost:3000).
 3. Scroll to the footer section to verify that the updates have been applied
 
 ---
 
-### Additional Notes
+## Additional Notes
 
 - **Dynamic Content**:
-  - You can dynamically add more social or custom links by expanding the `index.yaml` file.
+  - You can dynamically add more social or custom links by expanding the **index.yaml** file.
 - **Footer Layout**:
-  - For advanced customization, create a new footer template or modify the existing `footer.mustache` file.
+  - For advanced customization, create a new footer template or modify the existing **footer.mustache** file.
 
 ---
 

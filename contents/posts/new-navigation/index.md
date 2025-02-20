@@ -16,14 +16,14 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ---
 
-### Step 1: Edit the Navigation Menu
+## Step 1: Edit the Navigation Menu
 
 1. Open the **src/contents/index.yaml** file in your project directory.
    - This file manages the navigation menu displayed on your site.
 
-2. Add a new entry under the `navigation` section for your custom page. Example:
+2. Add a new entry under the **navigation** section for your custom page. Example:
 
-   ```
+   ```markdown
    navigation:
      - label: "About"
        url: "/about/"
@@ -34,13 +34,14 @@ Adding a custom page is a great way to enhance your site’s functionality by in
      - label: "Contact Us"
        url: "/contact-us/"
    ```
+
    **Fields Explanation**:
    - **label**: The text displayed in the navigation menu.
    - **url**: The relative URL of the custom page.
 
 ---
 
-### Step 2: Create the Custom Page Directory
+## Step 2: Create the Custom Page Directory
 
 1. Navigate to the **src/contents/** folder.
 2. Create a new directory for your custom page. For example:
@@ -51,14 +52,14 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ---
 
-### Step 3: Add an `index.md` File
+## Step 3: Add an **index.md** File
 
-1. Inside the new directory (e.g., `src/contents/contact-us`), create a file named `index.md`.
+1. Inside the new directory (e.g., **src/contents/contact-us**), create a file named **index.md**.
    - This file stores the metadata and content for the custom page.
 
-2. Add the following content to the `index.md` file:
+2. Add the following content to the **index.md** file:
 
-   ```
+   ```markdown
    ---
    title: "Contact Us"
    description: "Get in touch with us through this page."
@@ -66,6 +67,7 @@ Adding a custom page is a great way to enhance your site’s functionality by in
    template: pages.default_page
    ---
    ```
+
    **Fields Explanation**:
    - **title**: The title of the custom page.
    - **description**: A short description or summary of the page's content.
@@ -74,11 +76,11 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ---
 
-### Step 4: Add Content to the Page
+## Step 4: Add Content to the Page
 
-Below the metadata in `index.md`, write the content of your custom page using Markdown. Example:
+Below the metadata in **index.md**, write the content of your custom page using Markdown. Example:
 
-```
+```text
 ## Contact Us
 
 We'd love to hear from you! Please use the contact form below or email us directly at [support@example.com](mailto:support@example.com).
@@ -90,49 +92,51 @@ City, Country 12345
 
 ---
 
-### Step 5: Create a New Template (Optional)
+## Step 5: Create a New Template (Optional)
 
-1. If the default template `pages.default_page` does not fit your needs, create a custom Mustache template:
+1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache template:
    - Navigate to **src/themes/default/templates/pages/**.
-   - Create a new Mustache file, e.g., `contact_page.mustache`.
-2. Update the `template` field in the custom page's metadata to use your new template:
+   - Create a new Mustache file, e.g., **contact_page.mustache**.
+2. Update the **template** field in the custom page's metadata to use your new template:
 
-   ```
+   ```markdown
    template: pages.contact_page
    ```
 
 ---
 
-### Step 6: Regenerate the Site
+## Step 6: Regenerate the Site
 
 Once the custom page is created, regenerate the site to apply the changes:
 
 1. Open your terminal and navigate to your project directory.
 2. Run the following command:
 
-   ```
+   ```bash
    toucan generate
    ```
+
 3. This updates the site’s content and refreshes the navigation menu.
 
 ---
 
-### Step 7: Verify the Custom Page
+## Step 7: Verify the Custom Page
 
 1. Start the local development server:
 
-   ```
+   ```bash
    toucan serve
    ```
+
 2. Open your browser and go to [http://localhost:3000/contact-us/](http://localhost:3000/contact-us/).
 3. Ensure that the custom page is displayed correctly and can be accessed from the navigation menu.
 
 ---
 
-### Additional Notes
+## Additional Notes
 
 - **Updating Content**:
-  - You can edit the `index.md` file at any time to update the content of the custom page.
+  - You can edit the **index.md** file at any time to update the content of the custom page.
 - **Styling**:
   - Update the relevant Mustache templates and CSS files in the **themes/default/** directory to customize the page's look.
 
