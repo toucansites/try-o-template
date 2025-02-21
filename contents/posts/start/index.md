@@ -16,7 +16,9 @@ featured: true
 
 ## Disclaimer
 
-Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+@HighlightedText {
+  Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+}
 
 ## Introduction
 
@@ -59,6 +61,7 @@ This guide ensures you can easily manage updates and publish changes to your sit
 ## Closing Notes
 
 Thank you again for choosing Try-O-Theme! If you have any questions or need further assistance, feel free to:
+
 - [Contact](https://toucansites.com/contact/) us directly.
 - Check the Toucan [documentation](https://toucansites.com/docs/) for more detailed developer guidance.
 - Explore the examples provided in this guide.

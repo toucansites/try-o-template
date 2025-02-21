@@ -131,7 +131,7 @@ img.large {
     flex-shrink: 1;
 }
 
-.card .tag-list, .card .author-list {
+.card, .card .author-list {
     margin-bottom: 0;
 }
 
@@ -166,8 +166,7 @@ img.large {
     flex-grow: 1;
 }
 
-.author-list,
-.tag-list {
+.author-list {
     margin: 16px 0;
 }
 
@@ -175,6 +174,11 @@ img.large {
     font-size: 16px;
     margin-left: 4px;
     line-height: 1rem;
+}
+
+.tag-list {
+    margin-top: 20px;
+    margin-bottom: 56px;
 }
 
 .tag-list a {
@@ -187,12 +191,12 @@ img.large {
     font-weight: 800;
     line-height: 1rem;
     color: var(--text-color-2);
-    background: var(--background-color-1);
+    background: var(--background-color-accent);
 }
 
 .tag-list a:hover {
     color: var(--text-color-2);
-    background: var(--background-color-1);
+    background: var(--background-color-accent);
 }
 
 .article-class h1 {
@@ -251,7 +255,7 @@ img.large {
 }
 .article-class>div>aside {
     border-radius: 12px;
-    background: var(--background-color-1);
+    background: var(--background-color-accent);
     padding: 16px 32px;
     font-weight: bold;
     line-height: 1.5rem;
@@ -402,7 +406,7 @@ img.large {
     border-radius: 12px;
     font-weight: bold;
     padding: 8px 16px;
-    border: 3px solid var(--background-color-1);
+    border: 3px solid var(--background-color-accent);
 }
 
 .pagination a.current-page {
@@ -455,28 +459,6 @@ a.secondary:active {
     transform: translateY(4px);
 }
 
-
-details {
-    padding: 16px;
-    border-radius: 12px;
-    background: var(--background-color);
-    border: 2px solid var(--background-color-2);
-    margin-bottom: 8px;
-}
-
-details summary:hover {
-    cursor: pointer;
-}
-
-details div {
-    margin-top: 8px;
-}
-details div p {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 8px;
-}
-
 .primary .grid-221 .column:nth-child(1) {
     grid-row: 2 / span 1;
 }
@@ -488,34 +470,6 @@ details div p {
     .primary .grid-221 .column:nth-child(2) {
         grid-row: span 1;
     }
-}
-
-.more-centered {    
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
-
-.more-centered a:hover {    
-    background-color: var(--button-bg-hover);
-    border: 2px solid var(--button-shadow-hover);
-    box-shadow: 0px 2px 0px 0px var(--button-shadow-hover);
-}
-
-.custom-button {
-    border-radius: 0.75em;
-    text-align: center;
-    font-size: 0.8em;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 100%;
-    letter-spacing: 0.64px;
-    text-transform: uppercase;
-    padding: 15px 48.5px;
-    border: 2px solid var(--divider-color);
-    background: var(--background-color);
-    box-shadow: 0px 2px 0px 0px var(--button-shadow);
-    transform: translateY(0) translateZ(0);
 }
 
 .links, .shares {
@@ -559,4 +513,76 @@ blockquote {
     border-left: 4px solid var(--text-color);
     padding-left: 15px;
     color: var(--text-color);
+}
+
+.highlighted-text {
+    padding: 28px 28px;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    background-color: var(--background-color-accent);
+}
+.highlighted-text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.more-centered {    
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.more-centered a:hover {    
+    background-color: var(--all-button-bg-hover);
+    border: 2px solid var(--all-button-shadow-hover);
+    box-shadow: 0px 2px 0px 0px var(--all-button-shadow-hover);
+}
+
+.all-post-button {
+    border-radius: 0.75em;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    padding: 15px 48.5px;
+    border: 2px solid var(--divider-color);
+    background: var(--background-color);
+    box-shadow: 0px 2px 0px 0px var(--all-button-shadow);
+    transform: translateY(0) translateZ(0);
+}
+
+.button {
+    background-color: var(--button-bg);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 4px var(--button-bg-shadow);
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+
+.button p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a.button {
+    color: var(--button-bg-text);
+}
+  
+.button:hover {
+    opacity: .85;
+}
+.button:active {
+    box-shadow: none;
+    transform: translateY(2px);
 }

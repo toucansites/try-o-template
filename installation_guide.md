@@ -18,10 +18,11 @@ Before installing Toucan, ensure your environment is properly set up:
 
 2. **Verify Swift Installation**:
    - Open a terminal and type:
-   
-     ```
+
+     ```swift
      swift --version
      ```
+
    - You should see the installed Swift version. If not, check for installation errors to ensure Swift is correctly set up.
 
 ---
@@ -33,7 +34,7 @@ Before installing Toucan, ensure your environment is properly set up:
 1. Open your terminal.
 2. Clone the Toucan repository:
 
-   ```
+   ```bash
    git clone https://github.com/toucansites/toucan.git
    cd toucan
    ```
@@ -42,16 +43,18 @@ Before installing Toucan, ensure your environment is properly set up:
 
 1. Use `make` to build and install Toucan:
 
-   ```
+   ```bash
    make install
    ```
+
    - This command compiles the Toucan source code and installs it on your system.
 
 2. Verify the installation:
 
-   ```
+   ```bash
    which toucan
    ```
+
    - The output should display the path where Toucan is installed. If it doesn’t, check the installation logs for errors.
 
 ---
@@ -63,21 +66,22 @@ Before installing Toucan, ensure your environment is properly set up:
 1. Create a new site by running:
 
    - Run the following command in your terminal, replacing **my-site** with your desired project folder name:
-   
-   ```
+
+   ```bash
    toucan init my-site
    ```
+
    - Toucan will generate a folder with your chosen name, including default configuration files and templates.
 
 2. Navigate to your new site folder:
 
-   ```
+   ```bash
    cd my-site
    ```
 
 Once your site is initialized, your project will have the following structure:
 
-```
+```text
 my-site/
 ├── LICENSE            # License file for the project
 ├── Makefile           # Makefile for building and managing the project
@@ -92,9 +96,10 @@ my-site/
 
 1. Run the following command to generate the static files:
 
-   ```
+   ```bash
    toucan generate
    ```
+
    - Toucan processes your content and templates, producing static HTML files in the `docs` directory.
 
 ### Step 3: Watch for changes (only for macOS for now)
@@ -103,7 +108,7 @@ The watch command monitors a source directory for changes and automatically rege
 
 1. Run the following command to enable file watching:
 
-   ```
+   ```bash
    toucan watch
    ```
 
@@ -111,14 +116,16 @@ The watch command monitors a source directory for changes and automatically rege
 
 1. Start a local development server:
 
-   ```
+   ```bash
    toucan serve
    ```
+
 2. Open your browser and navigate to:
 
-   ```
+   ```bash
    http://localhost:3000
    ```
+
    - This allows you to preview your site locally.
 
 ---
@@ -133,26 +140,27 @@ The watch command monitors a source directory for changes and automatically rege
 
 	After successful file copies, your project will have the following structure:
 
-	```
-	my-site/
-	├── docs
-	└── src/
-	    ├── contents/
-	    │   ├── 404
-	    │   ├── about
-	    │   ├── assets
-	    │   ├── authors
-	    │   ├── home
-	    │   ├── lists
-	    │   ├── posts
-	    │   ├── tags
-	    │   └── index.yml
-	    └── themes/
-	        └── default/
-	            ├── assets
-	            ├── templates
-	            └── types
-	```
+   ```text
+   my-site/
+   ├── docs
+   └── src/
+         ├── contents/
+         │   ├── 404
+         │   ├── about
+         │   ├── assets
+         │   ├── authors
+         │   ├── home
+         │   ├── lists
+         │   ├── posts
+         │   ├── tags
+         │   └── index.yml
+         └── themes/
+            └── default/
+               ├── assets
+               ├── blocks
+               ├── templates
+               └── types
+   ```
 
 4. Once all files are successfully copied, regenerate your site to apply the changes:
 	- First run the following command:

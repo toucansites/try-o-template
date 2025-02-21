@@ -1,0 +1,17 @@
+name: Button
+tag: a
+params:
+  - label: url
+    default: ""
+  - label: class
+    default: "button"
+  - label: target
+    default: "_blank"
+removesChildParagraph: true
+attributes:
+  - name: href
+    value: "{{url}}"
+  - name: target
+    value: "{{target}}"
+  - name: class
+    value: "{{class}}"
