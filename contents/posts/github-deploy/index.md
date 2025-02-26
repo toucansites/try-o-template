@@ -2,7 +2,7 @@
 type: post
 title: "GitHub Deploy"
 description: "Toucan-based websites can be hosted for free using GitHub Pages. Follow these steps to set up your site"
-publication: 2025-01-10 00:00:00
+publication: 2025-01-09 00:00:00
 tags:
   - deployment
 authors:

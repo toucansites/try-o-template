@@ -2,7 +2,7 @@
 type: post
 title: Markdown Basics - Text Formatting
 description: This guide will walk you through the basics of Markdown text formatting
-publication: 2025-01-13 00:00:00
+publication: 2025-01-12 00:00:00
 tags:
   - markdown
 authors:

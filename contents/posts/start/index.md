@@ -38,6 +38,7 @@ Easily customize your site’s content by following these guides:
 - [Add a new post](/posts/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
 - [Create a custom page in navigation](/posts/new-navigation): Add static pages, like “About” or “Contact Us,” and include them in the navigation menu.
 - [Customize the footer](/posts/change-footer): Update your site’s footer with social links, copyright information, and custom text.
+- [Theme Tweaks](/posts/theme-tweaks): Tweak your theme by changing the theme colours or add block directives.
 
 Each guide is designed to provide step-by-step instructions to make the customization process seamless.
 
@@ -45,8 +46,8 @@ Each guide is designed to provide step-by-step instructions to make the customiz
 
 Markdown is a lightweight, easy-to-use markup language that simplifies formatting. Learn the essentials through these guides:
 
-- [Markdown basics part1](/posts/markdown-basic): Covers headings, bold/italic text, blockquotes, and lists.
-- [Markdown basics part2](/posts/markdown-basic2): Explores advanced features like images, links, code blocks, and tables.
+- [Markdown basics part1](/posts/markdown-basic): Covers headings, bold/italic textand blockquotes.
+- [Markdown basics part2](/posts/markdown-basic2): Explores advanced features like lists, links and images.
 
 Whether you’re new to Markdown or need a refresher, these guides will help you master its simplicity.
 

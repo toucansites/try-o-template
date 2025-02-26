@@ -1,4 +1,5 @@
 id: post
+api: posts
 rss: true
 template: post.default
 
@@ -27,6 +28,11 @@ relations:
 
 context:
     site:
+        posts:
+            sort: publication
+            order: desc
+            limit: 100
+
         featured:
             sort: publication
             order: desc

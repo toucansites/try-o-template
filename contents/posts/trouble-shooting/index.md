@@ -2,7 +2,7 @@
 type: post
 title: Troubleshooting
 description: Solutions to common issues with Try-O-Theme and Toucan static site generator.
-publication: 2025-01-09 00:00:00
+publication: 2025-01-08 00:00:00
 tags:
   - deployment
 authors:

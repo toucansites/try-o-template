@@ -1,0 +1,119 @@
+// wait for onLoad()
+window.onload = function() {
+    checkForSearch();
+};
+
+// check for 'q'
+function checkForSearch() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchText = urlParams.get('q');
+
+    if (searchText) {
+        handleSearch(searchText);
+
+    } else {
+        document.getElementById("search-list").innerHTML = `<div><p>No posts available.</p></div>`;
+        delayedShow()
+    }
+}
+
+// prevent content flickering
+function delayedShow() {
+    setTimeout(showData, 100);
+}
+
+// show search list
+function showData() {
+    document.getElementById("search-list").style.visibility = "visible";
+}
+
+async function handleSearch(searchText) {
+    try {
+        const responseData = await postFormDataAsJson();
+
+        const innerHTML = responseData
+        .filter(function(item) {
+            return item.title.toLowerCase().includes(searchText) || 
+                item.description.toLowerCase().includes(searchText);
+        })
+        .map(function(item) {
+            const authors = item.authors.map(item => ({
+                name: item.title,
+                link: item.permalink,
+                image: item.imageUrl
+            }));
+            const tags = item.tags.map(item => ({
+                name: item.title,
+                link: item.permalink,
+            }));
+
+            const html = createPostCard({
+                title: item.title,
+                permalink: item.permalink,
+                imageUrl: item.imageUrl,
+                date: item.publication.html,
+                authors: authors
+            });
+            return html;
+
+        })
+        .join("")
+
+        if (innerHTML.trim() === "") {
+            document.getElementById("search-list").innerHTML = `<div><p>No results.</p></div>`;
+        }
+        else {
+            document.getElementById("search-list").innerHTML = innerHTML;
+        }
+        delayedShow()
+    } 
+    catch (error) {
+        alert(`Something went wrong.\n${error}`);
+    }
+}
+
+// load data from api/posts.json
+async function postFormDataAsJson() {
+    const fetchOptions = {
+        method: "GET",
+        headers: {
+            Accept: "application/json",
+        }
+    };
+
+    const response = await fetch("/api/posts.json", fetchOptions);
+
+    if (!response.ok) {
+        const errorMessage = await response.text();
+        throw new Error(errorMessage);
+    }
+    const contentType = response.headers.get("content-type");
+    if (contentType && contentType.indexOf("application/json") !== -1) {
+        return response.json();
+    } 
+    throw new Error("Invalid response, not a valid JSON object.");
+}
+
+function createPostCard({
+    title,
+    permalink,
+    imageUrl,
+    date,
+    authors = [],
+}) {
+    return `
+        <div class="author-post-card">
+            <div class="author-posts-grid">
+                <a href="${permalink}" target=""><img src="${imageUrl}"></a>
+                <div class="author-data">
+                    <div class="author-post-meta">
+                        <time datetime="${date}">${date}</time>
+                        |
+                        ${authors.map(author => `<a href="${author.link}">${author.name}</a>`).join("")}
+                    </div>
+                    <div class="author-post-title"><a href="${permalink}" target="">${title}</a></div>
+                </div>
+            </div>
+        </div>
+    `;
+}

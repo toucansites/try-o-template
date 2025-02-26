@@ -2,7 +2,7 @@
 type: post
 title: Theme Tweaks
 description: Learn how to customize your Try-O-Theme by changing styles and using block directives.
-publication: 2025-01-11 00:00:00
+publication: 2025-01-10 00:00:00
 tags:
   - deployment
 authors:

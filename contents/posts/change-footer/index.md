@@ -2,7 +2,7 @@
 type: post
 title: Customize the footer
 description: This guide will walk you through how to customize the footer
-publication: 2025-01-14 00:00:00
+publication: 2025-01-13 00:00:00
 tags:
   - content
 authors:
