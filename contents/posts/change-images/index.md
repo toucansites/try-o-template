@@ -12,6 +12,8 @@ featured: false
 
 # Change Images
 
+![Cover Image](./assets/cover.jpg)
+
 Learn how to change images, including the site logo, cover images, post images, author images, and general Markdown images in Try-O-Theme.
 
 ---
@@ -59,7 +61,7 @@ Different types of images in **Try-O-Theme** are stored in different directories
    ```
 
 2. Replace or add images:
-   - **Cover image**: Name the file **cover.jpg** (or **.png**, **.webp**).
+   - **Cover image**: Name the file **cover.jpg** (or **.png**, **.webp**). If there is a cover.* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
    - **Inline images**: Save them in the **assets/** folder.
 
 3. Reference images inside the post:
@@ -147,3 +149,5 @@ Markdown allows you to embed images directly within your content. You can add im
 ---
 
 This guide ensures you can **easily update any image** in **Try-O-Theme**! 🚀
+
+**[Previous: START](/posts/start/)** | **[Next: Add New Tag](/posts/new-tag/)**

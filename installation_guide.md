@@ -13,10 +13,12 @@ Toucan product is currently in its beta phase, which means you might encounter i
 Before installing Toucan, ensure your environment is properly set up:
 
 1. **Install Swift**:
+
    - Toucan requires Swift to be installed on your machine.
    - [Download Swift](https://swift.org/download/) and follow the installation instructions for your operating system.
 
 2. **Verify Swift Installation**:
+
    - Open a terminal and type:
 
      ```swift
@@ -173,6 +175,7 @@ The watch command monitors a source directory for changes and automatically rege
    ```
    toucan serve
    ```
+   
 The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
 
 ## Default Contents
@@ -180,19 +183,25 @@ The theme comes with a variety of sample content to help you quickly understand 
 1.	Tags:
 	* Multiple tags are provided in **src/contents/tags/**.
 	* This demonstrates how tags are created and displayed.
+	
 2.	Authors:
 	* A test author is included in **src/contents/authors/**.
 	* This shows how to add and customize author profiles.
+	
 3.	Posts:
 	* Several sample posts are included in **src/contents/posts/**.
 	* These showcase how to write Markdown-based posts with metadata and images.
+	
 4.	404 Page:
 	* A preconfigured “Page Not Found” template is located in **src/contents/404/**.
+	
 5.	About Page:
 	* A sample “About” page is included in **src/contents/about/** to demonstrate static page creation.
+	
 6.	Assets:
 	* Default images and icons are stored in **src/contents/assets/**.
 	* Includes logos, placeholders, and theme-specific assets.
+	
 7.	Home Page Content:
 	* A preconfigured home page setup is included in **src/contents/home/**.
 

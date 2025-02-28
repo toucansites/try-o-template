@@ -12,6 +12,8 @@ featured: false
 
 # Add a New Tag
 
+![Cover Image](./assets/cover.jpg)
+
 Tags are essential for organizing content on your website. They help visitors find posts by topic and enhance site navigation. Follow the steps below to add a new tag in **Try-O-Theme**.
 
 ---
@@ -104,3 +106,7 @@ Once the tag is created, regenerate your site to apply the changes:
 ---
 
 This guide ensures you can easily add and manage tags in **Try-O-Theme**.
+
+---
+
+**[Previous: Change Images](/posts/change-images/)** | **[Next: Add New Author](/posts/new-author/)**

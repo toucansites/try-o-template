@@ -12,6 +12,8 @@ featured: false
 
 # Add a New Post
 
+![Cover Image](./assets/cover.jpg)
+
 Adding new posts is essential to keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Theme**.
 
 ---
@@ -109,8 +111,8 @@ This is the content of my first blog post. It’s written in Markdown, so you ca
 
 2. Copy your cover image to the assets folder:
 
-  - The filename should be cover.* (e.g., cover.jpg, cover.png, cover.webp).
-  - If there is a cover.* image in the assets folder, Toucan will automatically use it as the post’s cover image.
+- The filename should be cover.* (e.g., cover.jpg, cover.png, cover.webp).
+- If there is a cover.* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
 
 ## Step 6: Add Images (Optional)
 
@@ -166,3 +168,7 @@ Once the post is created, regenerate your site to apply the changes:
 ---
 
 This guide ensures you can easily create and manage posts in **Try-O-Theme**.
+
+---
+
+**[Previous: Add New Author](/posts/new-author/)** | **[Next: Create a Custom Page in Navigation](/posts/new-navigation/)**

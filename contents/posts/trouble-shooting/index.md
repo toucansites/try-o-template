@@ -12,6 +12,8 @@ featured: false
 
 # Troubleshooting
 
+![Cover Image](./assets/cover.jpg)
+
 This guide will help you troubleshoot common problems when working with **Try-O-Theme** and **Toucan**.
 
 ---
@@ -249,3 +251,5 @@ The tag assigned to a post is not working, or the post is not grouped under the 
 - Contact [Toucan Support](https://toucansites.com/contact/) if needed.
 
 ---
+
+**[Previous: GitHub Pages](/posts/github-deploy/)**

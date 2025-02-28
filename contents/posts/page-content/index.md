@@ -12,6 +12,8 @@ featured: false
 
 # Adding Extra Content
 
+![Cover Image](./assets/cover.jpg)
+
 In **Try-O-Theme**, you can add extra content to your pages using **Markdown** inside index.md files. This guide will show you how to structure your content and use custom fields.
 
 ---
@@ -98,3 +100,7 @@ All this Markdown content gets inserted into the page dynamically!
 
 Customizing pages in Try-O-Theme is easy with **index.md** files.  
 By using **YAML metadata** and **Markdown for content**, you can enhance any page dynamically!
+
+---
+
+**[Previous: Create a Custom Page in Navigation](/posts/new-navigation/)** | **[Next: Customize the Footer](/posts/change-footer/)**

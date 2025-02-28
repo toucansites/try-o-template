@@ -12,6 +12,8 @@ featured: false
 
 # Customize the Footer
 
+![Cover Image](./assets/cover.jpg)
+
 The footer is an important section of your website, often used to display additional navigation, social media links, or copyright information. Follow these steps to customize the footer in **Try-O-Theme**.
 
 ---
@@ -120,3 +122,7 @@ After updating the footer content or styles, regenerate the site to apply the ch
 ---
 
 This guide ensures you can easily customize and manage your footer content in **Try-O-Theme**.
+
+---
+
+**[Previous: Adding Extra Content](/posts/page-content/)** | **[Next: Markdown Basics - Text Formatting](/posts/markdown-basic/)**

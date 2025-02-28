@@ -12,6 +12,8 @@ featured: false
 
 # Add a New Author
 
+![Cover Image](./assets/cover.jpg)
+
 Authors allow you to attribute content to specific contributors, enhancing credibility and providing additional context for your website. Follow these steps to add a new author in **Try-O-Theme**.
 
 ---
@@ -31,6 +33,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
      ```bash
      mkdir src/contents/authors/john-doe
      ```
+
    - Use lowercase letters and hyphens for consistency in folder naming.
 
 ---
@@ -121,3 +124,7 @@ After creating the author, you need to regenerate your site to apply the changes
 ---
 
 This guide ensures you can easily add and manage authors in **Try-O-Theme**.
+
+---
+
+**[Previous: Add New Tag](/posts/new-tag/)** | **[Next: Add New Post](/posts/new-post/)**

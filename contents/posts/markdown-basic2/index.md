@@ -12,6 +12,8 @@ featured: false
 
 # List, Links and Images
 
+![Cover Image](./assets/cover.jpg)
+
 Markdown makes it easy to add lists, links and images to your documents using simple syntax.
 
 ---
@@ -119,3 +121,7 @@ function example() {
   console.log("Hello, Markdown!");
 }
 ```
+
+---
+
+**[Previous: Markdown Basics - Text Formatting](/posts/markdown-basic/)** | **[Next: Theme Tweaks](/posts/theme-tweaks/)**

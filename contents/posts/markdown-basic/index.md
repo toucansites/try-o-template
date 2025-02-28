@@ -12,6 +12,8 @@ featured: false
 
 # Text Formatting
 
+![Cover Image](./assets/cover.jpg)
+
 Markdown is a lightweight markup language used to format plain text. Here’s how to use its essential syntax.
 
 ---
@@ -62,3 +64,5 @@ ___
 ```
 
 ---
+
+**[Previous: Customize the Footer](/posts/change-footer/)** | **[Next: Markdown Basics - List, Links and Images](/posts/markdown-basic2/)**

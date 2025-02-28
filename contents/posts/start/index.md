@@ -32,7 +32,7 @@ This guide will walk you through essential tasks, such as changing the site logo
 
 Easily customize your site’s content by following these guides:
 
-- [Change the site logo](/posts/change-site-logo): Learn how to replace the default logo with your own custom branding.
+- [Change Images](/posts/change-images/): Learn how to replace or update images across your site.  
 - [Add a new tag](/posts/new-tag): Organize your posts by creating tags to improve navigation.
 - [Add a new author](/posts/new-author): Showcase contributors by adding author profiles with bios, images, and social links.
 - [Add a new post](/posts/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
@@ -66,3 +66,7 @@ Thank you again for choosing Try-O-Theme! If you have any questions or need furt
 - [Contact](https://toucansites.com/contact/) us directly.
 - Check the Toucan [documentation](https://toucansites.com/docs/) for more detailed developer guidance.
 - Explore the examples provided in this guide.
+
+---
+
+**[Next: Change Images](/posts/change-images/)**
