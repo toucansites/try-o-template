@@ -99,7 +99,7 @@ All this Markdown content gets inserted into the page dynamically!
 - Keep content clean & organized for better readability.  
 
 Customizing pages in Try-O-Theme is easy with **index.md** files.  
-By using **YAML metadata** and **Markdown for content**, you can enhance any page dynamically!
+By using **YML metadata** and **Markdown for content**, you can enhance any page dynamically!
 
 ---
 

@@ -20,7 +20,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 1: Edit the Footer Content
 
-1. Open the **src/contents/index.yaml** file in your project directory.
+1. Open the **src/contents/index.yml** file in your project directory.
    - This file contains the global configuration for your site, including footer content.
 
 2. Locate the **footer-socials** section. Example:
@@ -45,7 +45,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 2: Add Custom Links or Text
 
-1. To include additional text (e.g., copyright notices or custom links), locate or add a section like this in **index.yaml**:
+1. To include additional text (e.g., copyright notices or custom links), locate or add a section like this in **index.yml**:
 
    ```yaml
    footer-links:
@@ -86,7 +86,21 @@ The footer is an important section of your website, often used to display additi
 
 ---
 
-## Step 4: Regenerate the Site
+## Step 4: Change My site © 2025
+
+Update the the "My site" copyright label in the bottom of the site by rewriting the title section in the **index.yml**:
+
+   ```yaml
+    baseUrl: "http://localhost:3000/"
+    language: "en-US"
+    title: "My site"
+    description: "Description for my site"
+    dateFormat: "yyyy.MM.dd."
+   ```
+
+---
+
+## Step 5: Regenerate the Site
 
 After updating the footer content or styles, regenerate the site to apply the changes:
 
@@ -99,7 +113,7 @@ After updating the footer content or styles, regenerate the site to apply the ch
 
 ---
 
-## Step 5: Verify the Footer Changes
+## Step 6: Verify the Footer Changes
 
 1. Start the local development server:
 
@@ -115,7 +129,7 @@ After updating the footer content or styles, regenerate the site to apply the ch
 ## Additional Notes
 
 - **Dynamic Content**:
-  - You can dynamically add more social or custom links by expanding the **index.yaml** file.
+  - You can dynamically add more social or custom links by expanding the **index.yml** file.
 - **Footer Layout**:
   - For advanced customization, create a new footer template or modify the existing **footer.mustache** file.
 

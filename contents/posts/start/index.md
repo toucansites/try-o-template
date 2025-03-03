@@ -22,7 +22,7 @@ featured: true
 
 ## Introduction
 
-Thank you for purchasing Try-O-Theme! This theme is built on the powerful Toucan static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design. 
+Thank you for purchasing Try-O-Theme! This theme is built on our very own, soaring Toucan static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
 
 With Markdown, you can write formatted text in plain-text files, which Toucan converts into HTML. Mustache templates allow you to customize the layout and presentation of your site with clean, readable syntax. Together, they give you full control over both the content and appearance of your site.
 
@@ -44,7 +44,7 @@ Each guide is designed to provide step-by-step instructions to make the customiz
 
 ## Markdown basics
 
-Markdown is a lightweight, easy-to-use markup language that simplifies formatting. Learn the essentials through these guides:
+Markdown is an easy-to-use markup language that simplifies formatting. Learn the essentials through these guides:
 
 - [Markdown basics part1](/posts/markdown-basic): Covers headings, bold/italic textand blockquotes.
 - [Markdown basics part2](/posts/markdown-basic2): Explores advanced features like lists, links and images.
@@ -66,6 +66,11 @@ Thank you again for choosing Try-O-Theme! If you have any questions or need furt
 - [Contact](https://toucansites.com/contact/) us directly.
 - Check the Toucan [documentation](https://toucansites.com/docs/) for more detailed developer guidance.
 - Explore the examples provided in this guide.
+
+## Give a star on Github 🙏
+I'm sure you know, how much it means to an online service provider to more ratings on Github. Give us a star and watch us if you like Toucan and TRY-O theme. Thank you!
+
+[Toucan on Github](https://github.com/toucansites/toucan)
 
 ---
 

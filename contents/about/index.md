@@ -11,5 +11,4 @@ I am an award-winning author whose work spans multiple genres, including mystery
 
 Outside of writing, I am is an advocate for literacy programs and often conducts workshops to inspire young writers. I find inspiration in everyday life, using his keen observation to craft stories that resonate deeply with readers.
 
-This content is stored inside the **src/contents/about/index.md** file.  
-To modify this content, update this file.
+This content is stored inside the **src/contents/about/index.md** file. To modify this content, update this file.

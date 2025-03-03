@@ -34,7 +34,8 @@ async function handleSearch(searchText) {
         const innerHTML = responseData
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
-                item.description.toLowerCase().includes(searchText);
+                item.description.toLowerCase().includes(searchText) || 
+                item.contents.toLowerCase().includes(searchText);
         })
         .map(function(item) {
             const authors = item.authors.map(item => ({
