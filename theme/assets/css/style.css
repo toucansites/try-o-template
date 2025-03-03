@@ -71,6 +71,11 @@ img {
     color: var(--text-color-3);
 }
 
+.wrapper p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
 article h4 {
     color: var(--text-color-1);
 }
@@ -294,6 +299,11 @@ img.large {
 .article-class pre {
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.article-class p {
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 .author-list-item img {
