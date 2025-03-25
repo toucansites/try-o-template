@@ -2,7 +2,7 @@
 type: post
 title: Troubleshooting
 description: Solutions to common issues with Try-O-Theme and Toucan static site generator.
-publication: 2025-01-08 00:00:00
+publication: 2025-01-08 01:02:03
 tags:
   - deployment
 authors:
@@ -252,4 +252,4 @@ The tag assigned to a post is not working, or the post is not grouped under the 
 
 ---
 
-**[Previous: GitHub Pages](/posts/github-deploy/)**
+**[Previous: GitHub Pages](/github-deploy/)**

@@ -24,9 +24,10 @@
                 </label>
 
                 <div class="menu-items">
-                    {{#navigation}}
+
+                    {{#site.navigation}}
                     <a href="{{site.baseUrl}}{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
-                    {{/navigation}}
+                    {{/site.navigation}}
 
                     <div class="search-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

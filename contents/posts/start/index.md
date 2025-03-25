@@ -32,13 +32,13 @@ This guide will walk you through essential tasks, such as changing the site logo
 
 Easily customize your site’s content by following these guides:
 
-- [Change Images](/posts/change-images/): Learn how to replace or update images across your site.  
-- [Add a new tag](/posts/new-tag): Organize your posts by creating tags to improve navigation.
-- [Add a new author](/posts/new-author): Showcase contributors by adding author profiles with bios, images, and social links.
-- [Add a new post](/posts/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
-- [Create a custom page in navigation](/posts/new-navigation): Add static pages, like “About” or “Contact Us,” and include them in the navigation menu.
-- [Customize the footer](/posts/change-footer): Update your site’s footer with social links, copyright information, and custom text.
-- [Theme Tweaks](/posts/theme-tweaks): Tweak your theme by changing the theme colours or add block directives.
+- [Change Images](/change-images/): Learn how to replace or update images across your site.  
+- [Add a new tag](/new-tag): Organize your posts by creating tags to improve navigation.
+- [Add a new author](/new-author): Showcase contributors by adding author profiles with bios, images, and social links.
+- [Add a new post](/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
+- [Create a custom page in navigation](/new-navigation): Add static pages, like “About” or “Contact Us,” and include them in the navigation menu.
+- [Customize the footer](/change-footer): Update your site’s footer with social links, copyright information, and custom text.
+- [Theme Tweaks](/theme-tweaks): Tweak your theme by changing the theme colours or add block directives.
 
 Each guide is designed to provide step-by-step instructions to make the customization process seamless.
 
@@ -46,8 +46,8 @@ Each guide is designed to provide step-by-step instructions to make the customiz
 
 Markdown is an easy-to-use markup language that simplifies formatting. Learn the essentials through these guides:
 
-- [Markdown basics part1](/posts/markdown-basic): Covers headings, bold/italic textand blockquotes.
-- [Markdown basics part2](/posts/markdown-basic2): Explores advanced features like lists, links and images.
+- [Markdown basics part1](/markdown-basic): Covers headings, bold/italic textand blockquotes.
+- [Markdown basics part2](/markdown-basic2): Explores advanced features like lists, links and images.
 
 Whether you’re new to Markdown or need a refresher, these guides will help you master its simplicity.
 
@@ -55,7 +55,7 @@ Whether you’re new to Markdown or need a refresher, these guides will help you
 
 Publish your site live using GitHub Pages:
 
-- [Deploy to a GitHub Page](/posts/github-deploy): Follow step-by-step instructions to deploy your docs folder to GitHub Pages and make your site accessible online.
+- [Deploy to a GitHub Page](/github-deploy): Follow step-by-step instructions to deploy your docs folder to GitHub Pages and make your site accessible online.
 
 This guide ensures you can easily manage updates and publish changes to your site.
 
@@ -74,4 +74,4 @@ I'm sure you know, how much it means to an online service provider to more ratin
 
 ---
 
-**[Next: Change Images](/posts/change-images/)**
+**[Next: Change Images](/change-images/)**

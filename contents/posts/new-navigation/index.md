@@ -2,7 +2,7 @@
 type: post
 title: Create a custom page in navigation
 description: This guide will walk you through how to create a custom page and add it to the navigation menu
-publication: 2025-01-15 00:00:00
+publication: 2025-01-15 01:02:03
 tags:
   - content
 authors:
@@ -148,4 +148,4 @@ This guide ensures you can create and manage custom pages with ease in **Try-O-T
 
 ---
 
-**[Previous: Add New Post](/posts/new-post/)** | **[Next: Adding Extra Content](/posts/page-content/)**
+**[Previous: Add New Post](/new-post/)** | **[Next: Adding Extra Content](/page-content/)**

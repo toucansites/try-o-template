@@ -31,17 +31,21 @@ async function handleSearch(searchText) {
     try {
         const responseData = await postFormDataAsJson();
 
-        const innerHTML = responseData
+        
+
+        const innerHTML = responseData.context.posts
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
-                item.description.toLowerCase().includes(searchText) || 
-                item.contents.toLowerCase().includes(searchText);
+                item.description.toLowerCase().includes(searchText) 
+                //item.contents.toLowerCase().includes(searchText);
         })
         .map(function(item) {
+
+            
             const authors = item.authors.map(item => ({
                 name: item.title,
                 link: item.permalink,
-                image: item.imageUrl
+                image: item.image
             }));
             const tags = item.tags.map(item => ({
                 name: item.title,
@@ -51,10 +55,11 @@ async function handleSearch(searchText) {
             const html = createPostCard({
                 title: item.title,
                 permalink: item.permalink,
-                imageUrl: item.imageUrl,
-                date: item.publication.html,
+                image: item.image,
+                date: item.publication.formats.sitemap,
                 authors: authors
             });
+
             return html;
 
         })
@@ -98,14 +103,15 @@ async function postFormDataAsJson() {
 function createPostCard({
     title,
     permalink,
-    imageUrl,
+    image,
     date,
     authors = [],
 }) {
+
     return `
         <div class="author-post-card">
             <div class="author-posts-grid">
-                <a href="${permalink}" target=""><img src="${imageUrl}"></a>
+                <a href="${permalink}" target=""><img src="${image}"></a>
                 <div class="author-data">
                     <div class="author-post-meta">
                         <time datetime="${date}">${date}</time>

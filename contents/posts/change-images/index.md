@@ -2,7 +2,7 @@
 type: post
 title: Change Images
 description: Learn how to change images, including the site logo, cover images, post images, and author images in Try-O-Theme.
-publication: 2025-01-19 00:00:00
+publication: 2025-01-19 01:02:03
 tags:
   - content
 authors:
@@ -23,7 +23,7 @@ Learn how to change images, including the site logo, cover images, post images, 
 Different types of images in **Try-O-Theme** are stored in different directories:  
 
 - **Site Logo**: Located in **src/contents/assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
-- **Post Images**: Stored in **src/contents/posts/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
+- **Post Images**: Stored in **src/contents/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
 - **Author Images**: Found in **src/contents/authors/author-name/assets/**, used for author profile pictures (author.jpg).
 - **General Markdown Images**: Can be stored inside any **assets/** directory within posts, pages, or other content. Used for embedding images inside Markdown files.
 
@@ -57,7 +57,7 @@ Different types of images in **Try-O-Theme** are stored in different directories
 1. Go to the post directory where you want to add/change images:
 
    ```bash
-   cd src/contents/posts/my-post/assets/
+   cd src/contents/my-post/assets/
    ```
 
 2. Replace or add images:
@@ -150,4 +150,4 @@ Markdown allows you to embed images directly within your content. You can add im
 
 This guide ensures you can **easily update any image** in **Try-O-Theme**! 🚀
 
-**[Previous: START](/posts/start/)** | **[Next: Add New Tag](/posts/new-tag/)**
+**[Previous: START](/start/)** | **[Next: Add New Tag](/new-tag/)**

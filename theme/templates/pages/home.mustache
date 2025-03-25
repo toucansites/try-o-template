@@ -5,22 +5,22 @@
 
     <div class="extra-space"> </div>
 
-    {{& page.contents}}
+    {{& page.contents.html}}
 
     <div class="extra-space"> </div>
 
     <h1>Featured posts</h1>
 
-    {{#empty(site.context.featured)}}
+    {{#empty(context.featured)}}
     No featured posts yet.
-    {{/empty(site.context.featured)}}
-    {{^empty(site.context.featured)}}
+    {{/empty(context.featured)}}
+    {{^empty(context.featured)}}
     <div class="grid grid-221">
-        {{#site.context.featured}}
+        {{#context.featured}}
         {{> partials.post}}
-        {{/site.context.featured}}
+        {{/context.featured}}
     </div>
-    {{/empty(site.context.featured)}}
+    {{/empty(context.featured)}}
 </div>
 
 <div class="wrapper">
@@ -31,16 +31,16 @@
 
     <h4>Most recents posts</h4>
 
-    {{#empty(site.context.recent)}}
+    {{#empty(context.recent)}}
     No recent posts yet.
-    {{/empty(site.context.recent)}}
-    {{^empty(site.context.recent)}}
+    {{/empty(context.recent)}}
+    {{^empty(context.recent)}}
     <div class="grid grid-221">
-        {{#site.context.recent}}
+        {{#context.recent}}
         {{> partials.post}}
-        {{/site.context.recent}}
+        {{/context.recent}}
     </div>
-    {{/empty(site.context.recent)}}
+    {{/empty(context.recent)}}
 
     <div class="more-centered">
         <a class="all-post-button" href="{{site.baseUrl}}/posts/page/1">All posts</a>
