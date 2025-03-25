@@ -31,8 +31,6 @@ async function handleSearch(searchText) {
     try {
         const responseData = await postFormDataAsJson();
 
-        
-
         const innerHTML = responseData.context.posts
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
@@ -40,7 +38,6 @@ async function handleSearch(searchText) {
                 //item.contents.toLowerCase().includes(searchText);
         })
         .map(function(item) {
-
             
             const authors = item.authors.map(item => ({
                 name: item.title,
@@ -87,7 +84,9 @@ async function postFormDataAsJson() {
         }
     };
 
-    const response = await fetch("/api/posts.json", fetchOptions);
+    // get baseUrl value
+    let baseUrlValue = document.getElementById("baseUrlValue").textContent;
+    const response = await fetch(baseUrlValue + "/api/posts.json", fetchOptions);
 
     if (!response.ok) {
         const errorMessage = await response.text();
