@@ -136,9 +136,13 @@ The watch command monitors a source directory for changes and automatically rege
 
 1. Delete all files from the **my-site/src/themes/default** folder and from the **my-site/src/contents** folder.
 
-2. Copy all files from the **try-o-theme-0.0.4/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
+2. Copy all files from the **try-o-theme-0.0.12/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
 
-3. Copy all files from the **try-o-theme-0.0.4/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
+3. Copy all files from the **try-o-theme-0.0.12/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
+
+4. Copy all files from the **try-o-theme-0.0.12/pipelines** folder in the ZIP file and paste them into the **my-site/src/pipelines** folder.
+
+5. Copy the file **try-o-theme-0.0.12/config.yml** in the ZIP file and paste it into the **my-site/src** folder.
 
 	After successful file copies, your project will have the following structure:
 
@@ -156,12 +160,20 @@ The watch command monitors a source directory for changes and automatically rege
          │   ├── posts
          │   ├── tags
          │   └── index.yml
+         ├── pipelines/
+         │   ├── 404.yml
+         │   ├── api.yml
+         │   ├── html.yml
+         │   ├── redirect.yml
+         │   ├── rss.yml
+         │   ├── sitemap.yml
          └── themes/
-            └── default/
-               ├── assets
-               ├── blocks
-               ├── templates
-               └── types
+         │   └── default/
+         │      ├── assets
+         │      ├── blocks
+         │      ├── templates
+         │      └── types
+         └── config.yml
    ```
 
 4. Once all files are successfully copied, regenerate your site to apply the changes:

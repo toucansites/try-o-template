@@ -1,42 +1,16 @@
-id: sitemap
-
-queries:
-    pages:
-        contentType: page
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-    posts:
-        contentType: post
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-    authors:
-        contentType: author
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-    tags:
-        contentType: tag
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-
+id: redirect
 contentTypes: 
     include:
-        - sitemap
+        - redirect
 
 engine: 
     id: mustache
     options:
         contentTypes: 
-            sitemap:
-                template: "sitemap"
+            redirect:
+                template: "redirect"
+
 output:
-    path: ""
-    file: sitemap
-    ext: xml
+    path: "{{slug}}"
+    file: index
+    ext: html

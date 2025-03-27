@@ -95,7 +95,6 @@ Update the the "My site" copyright label in the bottom of the site by rewriting 
     language: "en-US"
     title: "My site"
     description: "Description for my site"
-    dateFormat: "yyyy.MM.dd."
    ```
 
 ---

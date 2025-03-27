@@ -31,13 +31,16 @@ async function handleSearch(searchText) {
     try {
         const responseData = await postFormDataAsJson();
 
+        
+
         const innerHTML = responseData.context.posts
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
-                item.description.toLowerCase().includes(searchText) 
-                //item.contents.toLowerCase().includes(searchText);
+                item.description.toLowerCase().includes(searchText)  || 
+                item.contents.html.toLowerCase().includes(searchText)
         })
         .map(function(item) {
+
             
             const authors = item.authors.map(item => ({
                 name: item.title,
