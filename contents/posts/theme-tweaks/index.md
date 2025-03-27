@@ -2,7 +2,7 @@
 type: post
 title: Theme Tweaks
 description: Learn how to customize your Try-O-Theme by changing styles and using block directives.
-publication: 2025-01-10 00:00:00
+publication: 2025-01-10 01:02:03
 tags:
   - deployment
 authors:
@@ -107,4 +107,4 @@ By modifying CSS and using block directives, you can **fully customize Try-O-The
 
 ---
 
-**[Previous: Markdown Basics - List, Links and Images](/posts/markdown-basic2/)** | **[Next: GitHub Pages](/posts/github-deploy/)**
+**[Previous: Markdown Basics - List, Links and Images](/markdown-basic2/)** | **[Next: GitHub Pages](/github-deploy/)**

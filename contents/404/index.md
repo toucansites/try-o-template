@@ -1,4 +1,5 @@
 ---
+type: not-found
 title: Not found
 description: Page not found
 ---

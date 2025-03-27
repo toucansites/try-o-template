@@ -2,7 +2,7 @@
 type: post
 title: Adding Extra Content
 description: Learn how to add custom content to different pages in Try-O-Theme using Markdown and frontmatter in index.md files.
-publication: 2025-01-14 00:00:00
+publication: 2025-01-14 01:02:03
 tags:
   - content
 authors:
@@ -103,4 +103,4 @@ By using **YML metadata** and **Markdown for content**, you can enhance any page
 
 ---
 
-**[Previous: Create a Custom Page in Navigation](/posts/new-navigation/)** | **[Next: Customize the Footer](/posts/change-footer/)**
+**[Previous: Create a Custom Page in Navigation](/new-navigation/)** | **[Next: Customize the Footer](/change-footer/)**

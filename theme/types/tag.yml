@@ -1,23 +1,25 @@
 id: tag
-template: tag.default
+paths:
+    - tags
 
 properties:
+    title:
+        type: string
+        required: true
     order:
         type: int
         required: true
 
-context:
-    site:
-        tags:
-            sort: title
-            order: asc
-            pagination:
-                limit: 10
-                
-    local:
-        posts:
-            references: post
-            foreignKey: tags
-            sort: title
-            order: asc
-            limit: 10
+relations:
+
+queries:
+    posts:
+        contentType: post
+        scope: list
+        filter:
+            key: tags
+            operator: contains
+            value: "{{id}}"
+        orderBy:
+            - key: publication
+              direction: desc

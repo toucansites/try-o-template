@@ -1,0 +1,14 @@
+id: page
+default: true
+paths:
+    - home
+    - about
+    - authors
+    - tags
+    - search
+
+properties:
+    title:
+        type: string
+        required: true
+        default: null

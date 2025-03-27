@@ -9,19 +9,19 @@
 
     <div class="extra-space"> </div>
 
-    {{& page.contents}}
+    {{& page.contents.html}}
 
-    {{#empty(site.context.tags)}}
+    {{#empty(context.tags)}}
     Empty.
-    {{/empty(site.context.tags)}}
-    {{^empty(site.context.tags)}}
+    {{/empty(context.tags)}}
+    {{^empty(context.tags)}}
     <div class="grid grid-421">
-    {{#site.context.tags}}
+    {{#context.tags}}
         {{> partials.tag}}
-    {{/site.context.tags}}
+    {{/context.tags}}
     
     </div>
-    {{/empty(site.context.tags)}}
+    {{/empty(context.tags)}}
 
 </div>
 

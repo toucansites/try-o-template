@@ -2,7 +2,7 @@
 type: post
 title: Markdown Basics - Text Formatting
 description: This guide will walk you through the basics of Markdown text formatting
-publication: 2025-01-12 00:00:00
+publication: 2025-01-12 01:02:03
 tags:
   - markdown
 authors:
@@ -65,4 +65,4 @@ ___
 
 ---
 
-**[Previous: Customize the Footer](/posts/change-footer/)** | **[Next: Markdown Basics - List, Links and Images](/posts/markdown-basic2/)**
+**[Previous: Customize the Footer](/change-footer/)** | **[Next: Markdown Basics - List, Links and Images](/markdown-basic2/)**

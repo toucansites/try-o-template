@@ -1,5 +1,6 @@
 id: author
-template: author.default
+paths:
+    - authors
 
 properties:
     priority:
@@ -20,17 +21,15 @@ properties:
     tiktok:
         type: bool
         required: false
-    
-context:
-    site:
-        authors:
-            sort: title
-            order: asc
 
-    local:
-        posts:
-            references: post
-            foreignKey: authors
-            sort: publication
-            order: desc
-            limit: 50
+queries:
+    posts:
+        contentType: post
+        scope: detail
+        filter:
+            key: authors
+            operator: contains
+            value: "{{id}}"
+        orderBy:
+            - key: publication
+              direction: desc

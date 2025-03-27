@@ -2,7 +2,6 @@ baseUrl: "http://localhost:3000/"
 language: "en-US"
 title: "My site"
 description: "Description for my site"
-dateFormat: "yyyy.MM.dd."
 navigation:
     - label: "About"
       url: "/about/"

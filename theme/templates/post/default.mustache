@@ -9,18 +9,16 @@
         <article>
 
             <div class="post-meta">
-
-                <time datetime="{{page.publication.html}}">
-                    {{page.publication.html}}
+                <time datetime="{{page.publication.formats.sitemap}}">
+                    {{page.publication.formats.sitemap}}
                 </time>
                 |
                 {{#page.authors}}
-                    <a href="{{permalink}}">{{title}}</a>
+                <a href="{{permalink}}">{{title}}</a>
                 {{/page.authors}}
-            
             </div>
             
-            {{& page.contents}}
+            {{& page.contents.html}}
 
             </br>
                 

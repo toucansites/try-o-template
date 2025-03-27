@@ -248,7 +248,7 @@ img.large {
 
 .article-class {
     margin: 16px;
-    display: grid;
+    display: block;
     grid-column-gap: 32px;
     grid-template-columns: 1fr;
 }
@@ -279,8 +279,17 @@ img.large {
     color: var(--text-color-1);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1060px) {
+    .article-class{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
     .article-class {
+        width: 1060px;
+        margin: 0px auto;
         grid-template-columns: 1fr auto;
     }
     .article-class>div:nth-child(1),

@@ -2,7 +2,7 @@
 type: post
 title: Customize the footer
 description: This guide will walk you through how to customize the footer
-publication: 2025-01-13 00:00:00
+publication: 2025-01-13 01:02:03
 tags:
   - content
 authors:
@@ -95,7 +95,6 @@ Update the the "My site" copyright label in the bottom of the site by rewriting 
     language: "en-US"
     title: "My site"
     description: "Description for my site"
-    dateFormat: "yyyy.MM.dd."
    ```
 
 ---
@@ -139,4 +138,4 @@ This guide ensures you can easily customize and manage your footer content in **
 
 ---
 
-**[Previous: Adding Extra Content](/posts/page-content/)** | **[Next: Markdown Basics - Text Formatting](/posts/markdown-basic/)**
+**[Previous: Adding Extra Content](/page-content/)** | **[Next: Markdown Basics - Text Formatting](/markdown-basic/)**

@@ -9,18 +9,18 @@
 
     <div class="extra-space"> </div>
 
-    {{& page.contents}}
+    {{& page.contents.html}}
 
-    {{#empty(site.context.authors)}}
+    {{#empty(context.authors)}}
     Empty.
-    {{/empty(site.context.authors)}}
-    {{^empty(site.context.authors)}}
+    {{/empty(context.authors)}}
+    {{^empty(context.authors)}}
     <div class="authors-list-grid">
-    {{#site.context.authors}}
+    {{#context.authors}}
         {{> partials.author}}
-    {{/site.context.authors}}
+    {{/context.authors}}
     </div>
-    {{/empty(site.context.authors)}}
+    {{/empty(context.authors)}}
 
 </div>
 
