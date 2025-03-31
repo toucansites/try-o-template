@@ -30,6 +30,15 @@ contentTypes:
     include:
         - sitemap
 
+iterators:
+    post.pagination:
+        contentType: post
+        scope: detail
+        limit: 9
+        orderBy:
+            - key: publication
+              direction: desc
+
 engine: 
     id: mustache
     options:
