@@ -595,3 +595,11 @@ a.button {
     box-shadow: none;
     transform: translateY(2px);
 }
+
+.hiddenText {
+    visibility: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0rem;
+    line-height: 0rem;
+}

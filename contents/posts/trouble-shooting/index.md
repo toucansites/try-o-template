@@ -59,14 +59,14 @@ Toucan CLI is not installed or not in your system’s **PATH**.
 **Cause**  
 
 - Missing content directory or **index.md** file.
-- Incorrect `url` in **index.yml**.
+- Incorrect `url` in **site.yml**.
 - `baseUrl` not updated for deployment.
 
 **Solution**  
 
 - Verify page/post folder and **index.md** exist.
-- Check `navigation` in **index.yml**.
-- Set `baseUrl` in **index.yml**:
+- Check `navigation` in **site.yml**.
+- Set `baseUrl` in **site.yml**:
 
   ```yaml
   baseUrl: "https://yourusername.github.io/repository-name/"
@@ -183,7 +183,7 @@ This ensures your latest site changes are visible in the browser.
 
 **Solution**  
 
-- Set `baseUrl` in **index.yml**:
+- Set `baseUrl` in **site.yml**:
 
   ```yaml
   baseUrl: "https://yourusername.github.io/repository-name/"

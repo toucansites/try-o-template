@@ -106,7 +106,7 @@ If you want to create a site in an existing repository, skip to the [Creating yo
     ```
 
 2. Update base url
-    When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is location in **src/contens/index.yml**:
+    When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is location in **src/contens/site.yml**:
 
     ```yaml
     baseUrl: "http://localhost:3000/"

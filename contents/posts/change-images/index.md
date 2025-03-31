@@ -1,7 +1,7 @@
 ---
 type: post
 title: Change Images
-description: Learn how to change images, including the site logo, cover images, post images, and author images in Try-O-Theme.
+description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O-Theme.
 publication: 2025-01-19 01:02:03
 tags:
   - content
@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Learn how to change images, including the site logo, cover images, post images, author images, and general Markdown images in Try-O-Theme.
+Learn how to change images, including the site logo, the favicon, cover images, post images, author images, and general Markdown images in Try-O-Theme.
 
 ---
 
@@ -42,6 +42,31 @@ Different types of images in **Try-O-Theme** are stored in different directories
    - **logo~dark.png** → Used in dark mode.
 
 3. Ensure your new logos have the **same file names** as the originals.
+
+4. Regenerate & preview the site:
+
+   ```bash
+   toucan generate
+   toucan serve
+   ```
+
+---
+
+## Changing the Favicon
+
+Favicons are the small icons that appear in browser tabs and bookmarks. To update the favicon in Try-O-Theme:
+
+1. Navigate to the favicon directory:
+
+   ```bash
+   cd src/contents/assets/icons/
+   ```
+
+2. Replace the existing favicon files with your own. Recommended formats:
+   • **favicon.ico** (main file used by most browsers)
+   • Optional additional sizes: **favicon.png**, etc.
+
+3. Ensure the filenames match the ones currently used, or update references in the site head if you’re using custom names.
 
 4. Regenerate & preview the site:
 
