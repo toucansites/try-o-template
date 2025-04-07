@@ -1,9 +1,9 @@
 ---
 slug: ""
-title: "My site"
+title: "Home"
 description: "Description for my site"
-image: /images/default.png
 template: pages.home
+image: /images/default.png
 ---
 
 Thank you for purchasing Try-O-Theme and welcome! Explore the TRY-O and get access to the documentation via the blog posts!

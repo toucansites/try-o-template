@@ -2,7 +2,7 @@
 type: post
 title: Troubleshooting
 description: Solutions to common issues with Try-O-Theme and Toucan static site generator.
-publication: 2025-01-08 01:02:03
+publication: 2025-03-13 00:00:01
 tags:
   - deployment
 authors:
@@ -59,14 +59,14 @@ Toucan CLI is not installed or not in your system’s **PATH**.
 **Cause**  
 
 - Missing content directory or **index.md** file.
-- Incorrect `url` in **index.yml**.
+- Incorrect `url` in **site.yml**.
 - `baseUrl` not updated for deployment.
 
 **Solution**  
 
 - Verify page/post folder and **index.md** exist.
-- Check `navigation` in **index.yml**.
-- Set `baseUrl` in **index.yml**:
+- Check `navigation` in **site.yml**.
+- Set `baseUrl` in **site.yml**:
 
   ```yaml
   baseUrl: "https://yourusername.github.io/repository-name/"
@@ -183,7 +183,7 @@ This ensures your latest site changes are visible in the browser.
 
 **Solution**  
 
-- Set `baseUrl` in **index.yml**:
+- Set `baseUrl` in **site.yml**:
 
   ```yaml
   baseUrl: "https://yourusername.github.io/repository-name/"
@@ -249,7 +249,3 @@ The tag assigned to a post is not working, or the post is not grouped under the 
 - Always check the terminal for errors.
 - See [Toucan Documentation](https://toucansites.com/docs/).
 - Contact [Toucan Support](https://toucansites.com/contact/) if needed.
-
----
-
-**[Previous: GitHub Pages](/github-deploy/)**

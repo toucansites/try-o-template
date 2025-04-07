@@ -2,7 +2,7 @@
 type: post
 title: Add New Author
 description: This guide will walk you through how to add a new author
-publication: 2025-01-17 01:02:03
+publication: 2025-03-04 00:00:01
 tags:
   - content
 authors:
@@ -124,7 +124,3 @@ After creating the author, you need to regenerate your site to apply the changes
 ---
 
 This guide ensures you can easily add and manage authors in **Try-O-Theme**.
-
----
-
-**[Previous: Add New Tag](/new-tag/)** | **[Next: Add New Post](/new-post/)**

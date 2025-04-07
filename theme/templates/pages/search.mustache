@@ -3,15 +3,11 @@
 
 <div class="wrapper">
 
-    <div class="extra-space"> </div>
-
     <h1>Search</h1>
 
     {{& page.contents.html}}
 
-    <div class="extra-space"> </div>
-
-    <p id="baseUrlValue" style="visibility: hidden;">{{site.baseUrl}}</p>
+    <p class="hiddenText" id="baseUrlValue">{{site.baseUrl}}</p>
 
     {{#empty(context.posts)}}
     Empty.

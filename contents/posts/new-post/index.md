@@ -2,7 +2,7 @@
 type: post
 title: Add New Post
 description: This guide will walk you through how to add a new post.
-publication: 2025-01-16 01:02:03
+publication: 2025-03-05 00:00:01
 tags:
   - content
 authors:
@@ -168,7 +168,3 @@ Once the post is created, regenerate your site to apply the changes:
 ---
 
 This guide ensures you can easily create and manage posts in **Try-O-Theme**.
-
----
-
-**[Previous: Add New Author](/new-author/)** | **[Next: Create a Custom Page in Navigation](/new-navigation/)**

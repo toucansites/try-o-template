@@ -2,7 +2,7 @@
 type: post
 title: GitHub Deploy
 description: Toucan-based websites can be hosted for free using GitHub Pages. Follow these steps to set up your site
-publication: 2025-01-09 01:02:03
+publication: 2025-03-12 00:00:01
 tags:
   - deployment
 authors:
@@ -106,7 +106,7 @@ If you want to create a site in an existing repository, skip to the [Creating yo
     ```
 
 2. Update base url
-    When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is location in **src/contens/index.yml**:
+    When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is location in **src/contens/site.yml**:
 
     ```yaml
     baseUrl: "http://localhost:3000/"
@@ -208,7 +208,3 @@ You can set up or update certain DNS records and your repository settings to poi
 6. Enforce HTTPS (Optional but Recommended)
     - After DNS propagation (may take a few minutes to 24 hours), go back to GitHub Pages settings.
     - Ensure **Enforce HTTPS** is enabled
-
----
-
-**[Previous: Theme Tweaks](/theme-tweaks/)** | **[Next: Troubleshooting](/trouble-shooting/)**

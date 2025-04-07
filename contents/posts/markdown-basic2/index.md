@@ -2,7 +2,7 @@
 type: post
 title: Markdown Basics - List, Links and Images
 description: This guide will walk you through how to use lists, links and images in Markdown
-publication: 2025-01-11 01:02:03
+publication: 2025-03-10 00:00:01
 tags:
   - markdown
 authors:
@@ -121,7 +121,3 @@ function example() {
   console.log("Hello, Markdown!");
 }
 ```
-
----
-
-**[Previous: Markdown Basics - Text Formatting](/markdown-basic/)** | **[Next: Theme Tweaks](/theme-tweaks/)**

@@ -4,7 +4,7 @@ home: search
 slug: search
 title: Search
 description: Search in all posts
-image: images/default.png
+image: /images/default.png
 template: pages.search
 ---
 

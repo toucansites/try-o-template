@@ -2,7 +2,7 @@
 type: post
 title: Customize the footer
 description: This guide will walk you through how to customize the footer
-publication: 2025-01-13 01:02:03
+publication: 2025-03-08 00:00:01
 tags:
   - content
 authors:
@@ -20,7 +20,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 1: Edit the Footer Content
 
-1. Open the **src/contents/index.yml** file in your project directory.
+1. Open the **src/contents/site.yml** file in your project directory.
    - This file contains the global configuration for your site, including footer content.
 
 2. Locate the **footer-socials** section. Example:
@@ -45,7 +45,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 2: Add Custom Links or Text
 
-1. To include additional text (e.g., copyright notices or custom links), locate or add a section like this in **index.yml**:
+1. To include additional text (e.g., copyright notices or custom links), locate or add a section like this in **site.yml**:
 
    ```yaml
    footer-links:
@@ -88,7 +88,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 4: Change My site © 2025
 
-Update the the "My site" copyright label in the bottom of the site by rewriting the title section in the **index.yml**:
+Update the the "My site" copyright label in the bottom of the site by rewriting the title section in the **site.yml**:
 
    ```yaml
     baseUrl: "http://localhost:3000/"
@@ -128,14 +128,10 @@ After updating the footer content or styles, regenerate the site to apply the ch
 ## Additional Notes
 
 - **Dynamic Content**:
-  - You can dynamically add more social or custom links by expanding the **index.yml** file.
+  - You can dynamically add more social or custom links by expanding the **site.yml** file.
 - **Footer Layout**:
   - For advanced customization, create a new footer template or modify the existing **footer.mustache** file.
 
 ---
 
 This guide ensures you can easily customize and manage your footer content in **Try-O-Theme**.
-
----
-
-**[Previous: Adding Extra Content](/page-content/)** | **[Next: Markdown Basics - Text Formatting](/markdown-basic/)**

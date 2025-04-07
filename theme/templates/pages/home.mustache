@@ -3,11 +3,7 @@
 
 <div class="wrapper">
 
-    <div class="extra-space"> </div>
-
     {{& page.contents.html}}
-
-    <div class="extra-space"> </div>
 
     <h1>Featured posts</h1>
 
@@ -21,13 +17,8 @@
         {{/context.featured}}
     </div>
     {{/empty(context.featured)}}
-</div>
 
-<div class="wrapper">
-    <div class="section-divider" />
-</div>
-
-<div class="wrapper">
+    <div class="section-divider"></div>
 
     <h4>Most recents posts</h4>
 
