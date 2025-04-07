@@ -2,7 +2,7 @@
 type: post
 title: Change Images
 description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O-Theme.
-publication: 2025-01-19 01:02:03
+publication: 2025-03-02 00:00:01
 tags:
   - content
 authors:
@@ -174,5 +174,3 @@ Markdown allows you to embed images directly within your content. You can add im
 ---
 
 This guide ensures you can **easily update any image** in **Try-O-Theme**! 🚀
-
-**[Previous: START](/start/)** | **[Next: Add New Tag](/new-tag/)**

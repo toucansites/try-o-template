@@ -2,7 +2,7 @@
 type: post
 title: Markdown Basics - Text Formatting
 description: This guide will walk you through the basics of Markdown text formatting
-publication: 2025-01-12 01:02:03
+publication: 2025-03-09 00:00:01
 tags:
   - markdown
 authors:
@@ -62,7 +62,3 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
 ---
 ___
 ```
-
----
-
-**[Previous: Customize the Footer](/change-footer/)** | **[Next: Markdown Basics - List, Links and Images](/markdown-basic2/)**

@@ -2,7 +2,7 @@
 type: post
 title: Add New Tag
 description: This guide will walk you through how to add a new tag
-publication: 2025-01-18 01:02:03
+publication: 2025-03-03 00:00:01
 tags:
   - content
 authors:
@@ -106,7 +106,3 @@ Once the tag is created, regenerate your site to apply the changes:
 ---
 
 This guide ensures you can easily add and manage tags in **Try-O-Theme**.
-
----
-
-**[Previous: Change Images](/change-images/)** | **[Next: Add New Author](/new-author/)**

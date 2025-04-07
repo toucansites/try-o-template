@@ -1,9 +1,7 @@
 {{<html}}
 {{$main}}
 
-<div>
-
-    <div class="extra-space"> </div>
+<div class="wrapper">
 
     <div class="article-class">
         <article>
@@ -32,31 +30,49 @@
             <h4>SHARE VIA</h4> 
             {{#page.permalink}}
                 {{> partials.share}}
-             {{/page.permalink}}
+            {{/page.permalink}}
+
+            <section>
+                <div class="grid grid-2">
+                    {{^page.prev}}
+                    <div></div>
+                    {{/page.prev}}
+                    {{#page.prev}}
+                    <div class="prev">
+                        <h4>&larr; Prev post</h4>
+                        <a href="{{permalink}}">{{title}}</a>
+                    </div>
+                    {{/page.prev}}
+                        
+                    {{^page.next}}
+                    <div></div>
+                    {{/page.next}}
+                    {{#page.next}}
+                    <div class="next">
+                        <h4 style="text-align: right;">Next post &rarr;</h4>
+                        <a href="{{permalink}}">{{title}}</a>
+                    </div>
+                    {{/page.next}}
+                </div>
+            </section>
                         
         </article>
     </div>
 
-    <div class="wrapper">
-        <div class="section-divider" />
-    </div>
+    <div class="section-divider"></div>
 
-    <div class="wrapper">
-
-        <h4>RELATED POSTS</h4>    
-        {{#empty(page.related)}}
-        No related posts.
-        {{/empty(page.related)}}
-        {{^empty(page.related)}}
-        <div class="grid grid-221">
-            {{#page.related}}
-                {{> partials.post}}
-            {{/page.related}}
-            </div>
-        {{/empty(page.related)}}
-
-    </div>
-
+    <h4>RELATED POSTS</h4>    
+    {{#empty(page.related)}}
+    No related posts.
+    {{/empty(page.related)}}
+    {{^empty(page.related)}}
+    <div class="grid grid-221">
+        {{#page.related}}
+            {{> partials.post}}
+        {{/page.related}}
+        </div>
+    {{/empty(page.related)}}
+    
 </div>
 
 {{/main}}

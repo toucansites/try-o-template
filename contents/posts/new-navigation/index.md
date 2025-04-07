@@ -2,7 +2,7 @@
 type: post
 title: Create a custom page in navigation
 description: This guide will walk you through how to create a custom page and add it to the navigation menu
-publication: 2025-01-15 01:02:03
+publication: 2025-03-06 00:00:01
 tags:
   - content
 authors:
@@ -145,7 +145,3 @@ Once the custom page is created, regenerate the site to apply the changes:
 ---
 
 This guide ensures you can create and manage custom pages with ease in **Try-O-Theme**.
-
----
-
-**[Previous: Add New Post](/new-post/)** | **[Next: Adding Extra Content](/page-content/)**

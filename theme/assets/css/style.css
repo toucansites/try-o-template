@@ -58,11 +58,6 @@ img {
     }
 }
 
-.extra-space {
-    width: 80px;
-    height: 80px;
-}
-
 .wrapper h4 {
     color: var(--text-color-1);
 }
@@ -80,9 +75,9 @@ article h4 {
     color: var(--text-color-1);
 }
 
-section {
+/*section {
     padding: 30px 15px;
-}
+}*/
 
 section.secondary {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -602,4 +597,12 @@ a.button {
     margin-bottom: 0px;
     font-size: 0rem;
     line-height: 0rem;
+}
+
+.prev > *, .next > * {
+    display: block;
+}
+
+.next > * {
+    text-align: right;
 }

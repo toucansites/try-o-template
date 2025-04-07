@@ -1,6 +1,6 @@
 ---
 slug: ""
-title: "My site"
+title: "Home"
 description: "Description for my site"
 image: /images/default.png
 template: pages.home

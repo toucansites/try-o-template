@@ -2,7 +2,7 @@
 type: post
 title: Customize the footer
 description: This guide will walk you through how to customize the footer
-publication: 2025-01-13 01:02:03
+publication: 2025-03-08 00:00:01
 tags:
   - content
 authors:
@@ -135,7 +135,3 @@ After updating the footer content or styles, regenerate the site to apply the ch
 ---
 
 This guide ensures you can easily customize and manage your footer content in **Try-O-Theme**.
-
----
-
-**[Previous: Adding Extra Content](/page-content/)** | **[Next: Markdown Basics - Text Formatting](/markdown-basic/)**

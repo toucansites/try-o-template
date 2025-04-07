@@ -2,7 +2,7 @@
 type: post
 title: GitHub Deploy
 description: Toucan-based websites can be hosted for free using GitHub Pages. Follow these steps to set up your site
-publication: 2025-01-09 01:02:03
+publication: 2025-03-12 00:00:01
 tags:
   - deployment
 authors:
@@ -208,7 +208,3 @@ You can set up or update certain DNS records and your repository settings to poi
 6. Enforce HTTPS (Optional but Recommended)
     - After DNS propagation (may take a few minutes to 24 hours), go back to GitHub Pages settings.
     - Ensure **Enforce HTTPS** is enabled
-
----
-
-**[Previous: Theme Tweaks](/theme-tweaks/)** | **[Next: Troubleshooting](/trouble-shooting/)**

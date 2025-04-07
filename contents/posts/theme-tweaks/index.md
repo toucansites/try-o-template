@@ -2,7 +2,7 @@
 type: post
 title: Theme Tweaks
 description: Learn how to customize your Try-O-Theme by changing styles and using block directives.
-publication: 2025-01-10 01:02:03
+publication: 2025-03-11 00:00:01
 tags:
   - deployment
 authors:
@@ -104,7 +104,3 @@ Block directives allow **reusable content components** to be easily placed insid
 ## Conclusion
 
 By modifying CSS and using block directives, you can **fully customize Try-O-Theme** to match your design needs. Block directives provide **structured content elements**, while CSS changes allow for full theme control.
-
----
-
-**[Previous: Markdown Basics - List, Links and Images](/markdown-basic2/)** | **[Next: GitHub Pages](/github-deploy/)**

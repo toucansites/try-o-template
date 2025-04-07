@@ -2,7 +2,7 @@
 type: post
 title: START
 description: This guide will walk you through essential tasks such as changing the site logo, adding new content (tags, authors, posts), and customizing your site’s pages and footer
-publication: 2025-01-20 01:36:39
+publication: 2025-03-01 00:00:01
 tags:
   - content
 authors:
@@ -71,7 +71,3 @@ Thank you again for choosing Try-O-Theme! If you have any questions or need furt
 I'm sure you know, how much it means to an online service provider to more ratings on Github. Give us a star and watch us if you like Toucan and TRY-O theme. Thank you!
 
 [Toucan on Github](https://github.com/toucansites/toucan)
-
----
-
-**[Next: Change Images](/change-images/)**
