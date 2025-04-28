@@ -9,7 +9,7 @@ function checkForSearch() {
     const searchText = urlParams.get('q');
 
     if (searchText) {
-        handleSearch(searchText);
+        handleSearch(searchText.toLowerCase());
 
     } else {
         document.getElementById("search-list").innerHTML = `<div><p>No posts available.</p></div>`;
