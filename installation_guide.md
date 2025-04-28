@@ -51,6 +51,12 @@ Before installing Toucan, ensure your environment is properly set up:
 
    - This command compiles the Toucan source code and installs it on your system.
 
+   Alternatively, if you encounter **permission errors**:
+
+   ```bash
+   sudo make install
+   ```
+
 2. Verify the installation:
 
    ```bash
@@ -144,7 +150,7 @@ The watch command monitors a source directory for changes and automatically rege
 
 5. Copy the file **try-o-theme-1.0.0-beta.1/config.yml** in the ZIP file and paste it into the **my-site/src** folder.
 
-	After successful file copies, your project will have the following structure:
+   After successful file copies, your project will have the following structure:
 
    ```text
    my-site/
