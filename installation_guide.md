@@ -51,10 +51,12 @@ Before installing Toucan, ensure your environment is properly set up:
 
    - This command compiles the Toucan source code and installs it on your system.
 
-   Alternatively, if you encounter **permission errors**:
+   The installation process internally calls sudo to copy the necessary Toucan binaries to the **/usr/local/bin** folder.
+
+   If you encounter permission issues during installation, it’s possible that the **install-toucan.sh** script is not marked as executable. Fix this by running:
 
    ```bash
-   sudo make install
+   ./scripts/run-chmod.sh
    ```
 
 2. Verify the installation:
