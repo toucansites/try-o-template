@@ -5,13 +5,17 @@ paths:
     - posts
 
 properties:
+    title:
+        type: string
+        required: true
+    publication:
+        type: date
+        required: true
     featured:
         type: bool
         required: false
         default: false
-    publication:
-        type: date
-        required: true
+    
 
 relations:
     authors:

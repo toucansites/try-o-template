@@ -31,27 +31,18 @@ async function handleSearch(searchText) {
     try {
         const responseData = await postFormDataAsJson();
 
-        
-
-        const innerHTML = responseData.context.posts
+        const innerHTML = responseData
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
                 item.description.toLowerCase().includes(searchText)  || 
                 item.contents.html.toLowerCase().includes(searchText)
         })
         .map(function(item) {
-
-            
             const authors = item.authors.map(item => ({
                 name: item.title,
                 link: item.permalink,
                 image: item.image
             }));
-            const tags = item.tags.map(item => ({
-                name: item.title,
-                link: item.permalink,
-            }));
-
             const html = createPostCard({
                 title: item.title,
                 permalink: item.permalink,
@@ -61,7 +52,6 @@ async function handleSearch(searchText) {
             });
 
             return html;
-
         })
         .join("")
 

@@ -1,16 +1,39 @@
 id: html
 
+assets:
+    behaviors:
+        - id: copy
+    properties:
+        - action: add
+          property: css
+          resolvePath: true
+          input:
+                name: "style" 
+                ext: "css"
+        - action: add
+          property: js
+          resolvePath: true
+          input:
+                name: "main" 
+                ext: "js"
+        - action: set
+          property: image
+          resolvePath: true
+          input:
+                name: "cover" 
+                ext: "*"
+
 queries: 
     posts:
         contentType: post
-        scope: list
+        scope: detail
         limit: 12
         orderBy:
             - key: publication
               direction: desc
     featured:
         contentType: post
-        scope: list
+        scope: detail
         filter:
             key: featured
             operator: equals
@@ -21,7 +44,7 @@ queries:
 
     recent:
         contentType: post
-        scope: list
+        scope: detail
         limit: 3
         orderBy:
             - key: publication
@@ -29,14 +52,14 @@ queries:
 
     authors:
         contentType: author
-        scope: list
+        scope: detail
         limit: 12
         orderBy:
             - key: title
               direction: asc
     tags:
         contentType: tag
-        scope: list
+        scope: detail
         limit: 12
         orderBy:
             - key: title
