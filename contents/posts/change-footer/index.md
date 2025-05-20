@@ -20,7 +20,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 1: Edit the Footer Content
 
-1. Open the **src/contents/site.yml** file in your project directory.
+1. Open the **src/site.yml** file in your project directory.
    - This file contains the global configuration for your site, including footer content.
 
 2. Locate the **footer-socials** section. Example:

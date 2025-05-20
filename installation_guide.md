@@ -8,64 +8,118 @@ Toucan is a Swift-based static site generator designed for simplicity and perfor
 
 Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
 
-## Prerequisites
+## Installation Overview
 
-Before installing Toucan, ensure your environment is properly set up:
+You can install Toucan on macOS or Linux using the following methods:
 
-1. **Install Swift**:
-
-   - Toucan requires Swift to be installed on your machine.
-   - [Download Swift](https://swift.org/download/) and follow the installation instructions for your operating system.
-
-2. **Verify Swift Installation**:
-
-   - Open a terminal and type:
-
-     ```swift
-     swift --version
-     ```
-
-   - You should see the installed Swift version. If not, check for installation errors to ensure Swift is correctly set up.
+- [Homebrew](https://brew.sh/)
+- [Mint (macOS only)](https://github.com/yonaskolb/Mint)
+- Prebuilt binary from [GitHub Releases](https://github.com/toucansites/toucan/releases)
+- `.pkg` installer for macOS
+- `.deb` or `.rpm` packages for Linux
+- Compile from source
 
 ---
 
-## Installation Steps
+## macOS Installation
 
-### Step 1: Clone the Repository
+### Homebrew
 
-1. Open your terminal.
-2. Clone the Toucan repository:
+```sh
+brew tap toucansites/toucan
+brew install toucan
+```
 
-   ```bash
-   git clone https://github.com/toucansites/toucan.git
-   cd toucan
-   ```
+Or directly:
 
-### Step 2: Build and Install Toucan
+```sh
+brew install toucansites/toucan/toucan
+```
 
-1. Use `make` to build and install Toucan:
+### Mint
 
-   ```bash
-   make install
-   ```
+```sh
+mint install toucansites/toucan
+```
 
-   - This command compiles the Toucan source code and installs it on your system.
+Or:
 
-   The installation process internally calls sudo to copy the necessary Toucan binaries to the **/usr/local/bin** folder.
+```sh
+mint run toucansites/toucan
+```
 
-   If you encounter permission issues during installation, it’s possible that the **install-toucan.sh** script is not marked as executable. Fix this by running:
+### GitHub Releases (Binary or PKG)
 
-   ```bash
-   ./scripts/run-chmod.sh
-   ```
+Download from: [Toucan GitHub Releases](https://github.com/toucansites/toucan/releases)
 
-2. Verify the installation:
+- For binary:
 
-   ```bash
-   which toucan
-   ```
+  ```sh
+  unzip toucan-macos-1.0.0.beta.4.zip
+  sudo mv toucan /usr/local/bin/
+  ```
 
-   - The output should display the path where Toucan is installed. If it doesn’t, check the installation logs for errors.
+- For PKG installer:
+
+  - GUI: double-click `.pkg` file
+  - CLI:
+
+    ```sh
+    sudo installer -pkg toucan-1.0.0-beta.4.pkg -target /
+    ```
+
+### Compile from Source
+
+```sh
+git clone https://github.com/toucansites/toucan.git
+cd toucan
+make install
+./scripts/run-chmod.sh
+which toucan
+```
+
+---
+
+## Linux Installation
+
+### Homebrew (Linuxbrew)
+
+```sh
+brew tap toucansites/toucan
+brew install toucan
+```
+
+Or:
+
+```sh
+brew install toucansites/toucan/toucan
+```
+
+### Native Packages
+
+#### Debian / Ubuntu
+
+```sh
+wget https://github.com/toucansites/toucan/releases/download/1.0.0.beta.4/toucan-linux-amd64-1.0.0.beta.4.deb
+sudo dpkg -i toucan-linux-amd64-1.0.0.beta.4.deb
+```
+
+#### Fedora / RHEL / openSUSE
+
+```sh
+wget https://github.com/toucansites/toucan/releases/download/1.0.0.beta.4/toucan-linux-x86_64-1.0.0.beta.4.rpm
+sudo rpm -i toucan-linux-x86_64-1.0.0.beta.4.rpm
+```
+
+### Compile from Source
+
+```sh
+git clone https://github.com/toucansites/toucan.git
+cd toucan
+make install
+./scripts/run-chmod.sh
+which toucan
+```
 
 ---
 
@@ -144,20 +198,30 @@ The watch command monitors a source directory for changes and automatically rege
 
 1. Delete all files from the **my-site/src/themes/default** folder and from the **my-site/src/contents** folder.
 
-2. Copy all files from the **try-o-theme-1.0.0-beta.1/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
+2. Copy all files from the **try-o-theme-1.0.0-beta.2/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
 
-3. Copy all files from the **try-o-theme-1.0.0-beta.1/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
+3. Copy all files from the **try-o-theme-1.0.0-beta.2/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
 
-4. Copy all files from the **try-o-theme-1.0.0-beta.1/pipelines** folder in the ZIP file and paste them into the **my-site/src/pipelines** folder.
+4. Copy all files from the **try-o-theme-1.0.0-beta.2/pipelines** folder in the ZIP file and paste them into the **my-site/src/pipelines** folder.
 
-5. Copy the file **try-o-theme-1.0.0-beta.1/config.yml** in the ZIP file and paste it into the **my-site/src** folder.
+5. Copy the file **try-o-theme-1.0.0-beta.2/config.yml** in the ZIP file and paste it into the **my-site/src** folder.
 
-   After successful file copies, your project will have the following structure:
+6. Copy the file **try-o-theme-1.0.0-beta.2/site.yml** in the ZIP file and paste it into the **my-site/src** folder.
+
+7. Copy all files from the **try-o-theme-1.0.0-beta.2/assets** folder in the ZIP file and paste them into the **my-site/src/assets** folder.
+
+8. Copy all files from the **try-o-theme-1.0.0-beta.2/blocks** folder in the ZIP file and paste them into the **my-site/src/blocks** folder.
+
+9. Copy all files from the **try-o-theme-1.0.0-beta.2/types** folder in the ZIP file and paste them into the **my-site/src/types** folder.
+
+After successful file copies, your project will have the following structure:
 
    ```text
    my-site/
    ├── docs
    └── src/
+         ├── assets/
+         ├── blocks/
          ├── contents/
          │   ├── 404
          │   ├── about
@@ -181,10 +245,12 @@ The watch command monitors a source directory for changes and automatically rege
          │      ├── blocks
          │      ├── templates
          │      └── types
+         ├── types/
          └── config.yml
+         └── site.yml
    ```
 
-4. Once all files are successfully copied, regenerate your site to apply the changes:
+10. Once all files are successfully copied, regenerate your site to apply the changes:
 	- First run the following command:
 
 	```

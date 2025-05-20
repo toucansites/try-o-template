@@ -20,7 +20,7 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ## Step 1: Edit the Navigation Menu
 
-1. Open the **src/contents/site.yml** file in your project directory.
+1. Open the **src/site.yml** file in your project directory.
    - This file manages the navigation menu displayed on your site.
 
 2. Add a new entry under the **navigation** section for your custom page. Example:

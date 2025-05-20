@@ -22,7 +22,7 @@ Learn how to change images, including the site logo, the favicon, cover images, 
 
 Different types of images in **Try-O-Theme** are stored in different directories:  
 
-- **Site Logo**: Located in **src/contents/assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
+- **Site Logo**: Located in **src/assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
 - **Post Images**: Stored in **src/contents/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
 - **Author Images**: Found in **src/contents/authors/author-name/assets/**, used for author profile pictures (author.jpg).
 - **General Markdown Images**: Can be stored inside any **assets/** directory within posts, pages, or other content. Used for embedding images inside Markdown files.
@@ -34,7 +34,7 @@ Different types of images in **Try-O-Theme** are stored in different directories
 1. **Navigate to the logo directory:**  
 
    ```bash
-   cd src/contents/assets/images/logos/
+   cd src/assets/images/logos/
    ```
 
 2. Replace the **logo.png** and **logo~dark.png** files with your custom images.
@@ -59,7 +59,7 @@ Favicons are the small icons that appear in browser tabs and bookmarks. To updat
 1. Navigate to the favicon directory:
 
    ```bash
-   cd src/contents/assets/icons/
+   cd src/assets/icons/
    ```
 
 2. Replace the existing favicon files with your own. Recommended formats:
