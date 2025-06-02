@@ -23,7 +23,7 @@ In **Try-O-Theme**, you can add extra content to your pages using **Markdown** i
 All the page content in **Try-O-Theme** is defined inside the **src/contents/** directory.  
 Common pages include:  
 
-- Homepage → **src/contents/home/index.md**  
+- Homepage → **src/contents/index.md**  
 - Search Page → **src/contents/search/index.md**
 - Tags List → **src/contents/lists/tag/index.md**
 - Authors List → **src/contents/lists/author/index.md**

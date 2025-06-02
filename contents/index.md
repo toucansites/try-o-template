@@ -12,5 +12,5 @@ If you like our Toucan SSG and the TRY-O theme, pls give us a star support on Gi
 
 And if you can, please consider supporting us with a donation, here:
 
-Extra content for the **Home Page** is stored inside the **src/contents/home/index.md** file.  
+Extra content for the **Home Page** is stored inside the **src/contents/index.md** file.  
 To modify the home page description, instructions, or additional information, update this file.
