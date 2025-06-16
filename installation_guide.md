@@ -198,7 +198,7 @@ The watch command monitors a source directory for changes and automatically rege
 
 ### Delete files
 
-Delete all files from the:
+Delete all files and sub-folders from the:
 
 1. **my-site/src/assets** folder
 2. **my-site/src/contents** folder
@@ -222,9 +222,9 @@ Delete all files from the:
 
 7. Copy all files from the **try-o-theme-1.0.0-beta.2/blocks** folder in the ZIP file and paste them into the **my-site/src/blocks** folder.
 
-8. Copy the file **try-o-theme-1.0.0-beta.2/config.yml** in the ZIP file and paste it into the **my-site/src** folder.
+8. Copy the file **try-o-theme-1.0.0-beta.2/config.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
 
-9. Copy the file **try-o-theme-1.0.0-beta.2/site.yml** in the ZIP file and paste it into the **my-site/src** folder.
+9. Copy the file **try-o-theme-1.0.0-beta.2/site.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
 
 After successful file copies, your project will have the following structure:
 
