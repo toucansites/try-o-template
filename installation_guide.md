@@ -150,7 +150,7 @@ my-site/
 ├── LICENSE            # License file for the project
 ├── Makefile           # Makefile for building and managing the project
 ├── README.md          # Project README file
-├── docs/              # Folder containing generated static files (HTML, CSS, etc.)
+├── dist/              # Folder containing generated static files (HTML, CSS, etc.)
 └── src/               # Source files for content and templates
 ```
 
@@ -230,7 +230,7 @@ After successful file copies, your project will have the following structure:
 
    ```text
    my-site/
-   ├── docs
+   ├── dist
    └── src/
          ├── assets/
          ├── blocks/
