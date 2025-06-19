@@ -196,7 +196,7 @@ The watch command monitors a source directory for changes and automatically rege
 
 ---
 
-## Copy Theme and Default Contents
+## Copy Template and Default Contents
 
 ### Delete files
 
@@ -205,28 +205,28 @@ Delete all files and sub-folders from the:
 1. **my-site/src/assets** folder
 2. **my-site/src/contents** folder
 3. **my-site/src/pipelines** folder
-4. **my-site/src/themes/default** folder
+4. **my-site/src/templates/default** folder
 5. **my-site/src/types** folder
 
 ### Copy files
 
-1. Copy all files from the **try-o-theme-1.0.0-beta.2/assets** folder in the ZIP file and paste them into the **my-site/src/assets** folder.
+1. Copy all files from the **try-o-template-1.0.0-beta.2/assets** folder in the ZIP file and paste them into the **my-site/src/assets** folder.
 
-2. Copy all files from the **try-o-theme-1.0.0-beta.2/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
+2. Copy all files from the **try-o-template-1.0.0-beta.2/contents** folder in the ZIP file and paste them into the **my-site/src/contents** folder.
 
-3. Copy all files from the **try-o-theme-1.0.0-beta.2/pipelines** folder in the ZIP file and paste them into the **my-site/src/pipelines** folder.
+3. Copy all files from the **try-o-template-1.0.0-beta.2/pipelines** folder in the ZIP file and paste them into the **my-site/src/pipelines** folder.
 
-4. Copy all files from the **try-o-theme-1.0.0-beta.2/theme** folder in the ZIP file and paste them into the **my-site/src/themes/default** folder.
+4. Copy all files from the **try-o-template-1.0.0-beta.2/template** folder in the ZIP file and paste them into the **my-site/src/templates/default** folder.
 
-5. Copy all files from the **try-o-theme-1.0.0-beta.2/types** folder in the ZIP file and paste them into the **my-site/src/types** folder.
+5. Copy all files from the **try-o-template-1.0.0-beta.2/types** folder in the ZIP file and paste them into the **my-site/src/types** folder.
 
 6. Create a folder **blocks**, if not exists inside the **my-site/src/** folder.
 
-7. Copy all files from the **try-o-theme-1.0.0-beta.2/blocks** folder in the ZIP file and paste them into the **my-site/src/blocks** folder.
+7. Copy all files from the **try-o-template-1.0.0-beta.2/blocks** folder in the ZIP file and paste them into the **my-site/src/blocks** folder.
 
-8. Copy the file **try-o-theme-1.0.0-beta.2/config.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
+8. Copy the file **try-o-template-1.0.0-beta.2/config.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
 
-9. Copy the file **try-o-theme-1.0.0-beta.2/site.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
+9. Copy the file **try-o-template-1.0.0-beta.2/site.yml** in the ZIP file and override/replace it in the **my-site/src** folder.
 
 After successful file copies, your project will have the following structure:
 
@@ -256,11 +256,11 @@ After successful file copies, your project will have the following structure:
          │   ├── redirect.yml
          │   ├── rss.yml
          │   ├── sitemap.yml
-         └── themes/
+         └── templates/
          │   └── default/
          │      ├── assets
          │      ├── blocks
-         │      ├── templates
+         │      ├── views
          │      └── types
          ├── types/
          └── config.yml
@@ -281,7 +281,7 @@ toucan generate
 toucan serve
 ```
 
-The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
+The template comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
 
 ## Default Contents
 
@@ -305,7 +305,7 @@ The theme comes with a variety of sample content to help you quickly understand 
 
 6. Assets:
    - Default images and icons are stored in **src/contents/assets/**.
-   - Includes logos, placeholders, and theme-specific assets.
+   - Includes logos, placeholders, and template-specific assets.
 
 7. Home Page Content:
    - A preconfigured home page setup is included in **src/contents/home/**.

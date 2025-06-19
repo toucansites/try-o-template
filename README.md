@@ -1,3 +1,3 @@
-# Toucan - Try-O theme
+# Toucan - Try-O template
 
-A premium theme for the Toucan Static Site Generator.
+A premium template for the Toucan Static Site Generator.

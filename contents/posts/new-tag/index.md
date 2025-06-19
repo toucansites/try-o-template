@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Tags are essential for organizing content on your website. They help visitors find posts by topic and enhance site navigation. Follow the steps below to add a new tag in **Try-O-Theme**.
+Tags are essential for organizing content on your website. They help visitors find posts by topic and enhance site navigation. Follow the steps below to add a new tag in **Try-O-Template**.
 
 ---
 
@@ -101,8 +101,8 @@ Once the tag is created, regenerate your site to apply the changes:
     ```
 
 - **Styling Tags**:
-  - To customize how tags are displayed, modify the relevant Mustache template in the **src/themes/default/templates/** directory.
+  - To customize how tags are displayed, modify the relevant Mustache template in the **src/templates/default/templates/** directory.
 
 ---
 
-This guide ensures you can easily add and manage tags in **Try-O-Theme**.
+This guide ensures you can easily add and manage tags in **Try-O-Template**.
