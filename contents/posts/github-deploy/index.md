@@ -127,16 +127,7 @@ If you want to create a site in an existing repository, skip to the [Creating yo
 
     The **baseUrl** is used to generate correct links across your site. If it points to **localhost**, links may break when your site is live on GitHub Pages. **Always remember to update baseUrl before deploying.**
 
-3. Navigate to the local repository folder and copy the **src** folder with all the content.
-    Use the generator’s serve command:
-
-    ```bash
-    toucan generate
-    ```
-
-    After succesfull generation all the data is generated inside the **docs** folder by Toucan.
-
-4. Push all the content to GitHub, add and commit files:
+3. Push all the content to GitHub, add and commit files:
 
     ```bash
     git add .
@@ -156,20 +147,17 @@ Before you can create your site, you must have a repository for your site on Git
 
 3. In the **Code and automation** section of the sidebar, click **Pages**.
 
-4. Under Source, leave the option **Deploy from a branch**.
+4. Under Source, select the option **GitHub Actions**.
     ![image4](./assets/image4.png)
 
-5. Under Branch:
-     ![image5](./assets/image5.png)
-    - Select the branch where you committed your files (e.g., main).
-    - Choose the **/docs** folder as the source.
-    - Click Save.
-
-6. Check the published site, GitHub will provide a public URL for your site, such as:
+5. Check the published site, GitHub will provide a public URL for your site, such as:
 
     ```text
     https://your-username.github.io/my-github-page/
     ```
+
+6. Check for the deploy file (optional)
+    Check if your repository contains **deploy.yml** file location in **.github/workflow/deploy.yml**. If the file does not exist, copy a deploy.yml file to the same directory structure. Every theme contains a **deploy.yml** file.
 
 ---
 

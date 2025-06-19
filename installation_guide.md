@@ -147,11 +147,13 @@ Once your site is initialized, your project will have the following structure:
 
 ```text
 my-site/
-├── LICENSE            # License file for the project
-├── Makefile           # Makefile for building and managing the project
-├── README.md          # Project README file
-├── dist/              # Folder containing generated static files (HTML, CSS, etc.)
-└── src/               # Source files for content and templates
+├── .github/
+   ├── workflows/
+      ├── deploy.yml       # Deploy file for Github Actions
+├── LICENSE                # License file for the project
+├── Makefile               # Makefile for building and managing the project
+├── README.md              # Project README file
+└── src/                   # Source files for content and templates
 ```
 
 ---
@@ -164,7 +166,7 @@ my-site/
    toucan generate
    ```
 
-   - Toucan processes your content and templates, producing static HTML files in the `docs` directory.
+   - Toucan processes your content and templates, producing static HTML files in the `dist` directory.
 
 ### Step 3: Watch for changes (only for macOS for now)
 
@@ -230,6 +232,9 @@ After successful file copies, your project will have the following structure:
 
    ```text
    my-site/
+   ├── .github/
+      ├── workflows/
+         ├── deploy.yml
    ├── dist
    └── src/
          ├── assets/
@@ -262,46 +267,48 @@ After successful file copies, your project will have the following structure:
          └── site.yml
    ```
 
-10. Once all files are successfully copied, regenerate your site to apply the changes:
-	- First run the following command:
+Once all files are successfully copied, regenerate your site to apply the changes:
 
-	```
-	toucan generate
-	```
-	- After successful generation, run the following command:
+- First run the following command:
 
-   ```
-   toucan serve
-   ```
-   
+```bash
+toucan generate
+```
+
+- After successful generation, run the following command:
+
+```bash
+toucan serve
+```
+
 The theme comes with a variety of sample content to help you quickly understand how to structure and manage your site. These include:
 
 ## Default Contents
 
-1.	Tags:
-	* Multiple tags are provided in **src/contents/tags/**.
-	* This demonstrates how tags are created and displayed.
-	
-2.	Authors:
-	* A test author is included in **src/contents/authors/**.
-	* This shows how to add and customize author profiles.
-	
-3.	Posts:
-	* Several sample posts are included in **src/contents/posts/**.
-	* These showcase how to write Markdown-based posts with metadata and images.
-	
-4.	404 Page:
-	* A preconfigured “Page Not Found” template is located in **src/contents/404/**.
-	
-5.	About Page:
-	* A sample “About” page is included in **src/contents/about/** to demonstrate static page creation.
-	
-6.	Assets:
-	* Default images and icons are stored in **src/contents/assets/**.
-	* Includes logos, placeholders, and theme-specific assets.
-	
-7.	Home Page Content:
-	* A preconfigured home page setup is included in **src/contents/home/**.
+1. Tags:
+   - Multiple tags are provided in **src/contents/tags/**.
+   - This demonstrates how tags are created and displayed.
+
+2. Authors:
+   - A test author is included in **src/contents/authors/**.
+   - This shows how to add and customize author profiles.
+
+3. Posts:
+   - Several sample posts are included in **src/contents/posts/**.
+   - These showcase how to write Markdown-based posts with metadata and images.
+
+4. 404 Page:
+   - A preconfigured “Page Not Found” template is located in **src/contents/404/**.
+
+5. About Page:
+   - A sample “About” page is included in **src/contents/about/** to demonstrate static page creation.
+
+6. Assets:
+   - Default images and icons are stored in **src/contents/assets/**.
+   - Includes logos, placeholders, and theme-specific assets.
+
+7. Home Page Content:
+   - A preconfigured home page setup is included in **src/contents/home/**.
 
 You can use these sample files as a reference or starting point for your project. Once you’re familiar with the structure, replace them with your own custom content.
 
