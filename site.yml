@@ -1,6 +1,5 @@
-baseUrl: "http://localhost:3000/"
-title: "My site"
-locale: "en-US"
+name: "My site"
+language: "en-US"
 description: "Description for my site"
 navigation:
     - label: "About"

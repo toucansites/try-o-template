@@ -68,7 +68,10 @@ queries:
 dataTypes:
     date:
         formats:
-            full: "yyyy/MM/dd"
+            full: 
+                format: "yyyy/MM/dd"
+            year: 
+                format: "y"
 
 contentTypes: 
     include:
@@ -91,13 +94,13 @@ engine:
     options:
         contentTypes: 
             page:
-                template: "pages.default"
+                view: "pages.default"
             author:
-                template: "author.default"
+                view: "author.default"
             tag:
-                template: "tag.default"
+                view: "tag.default"
             post:
-                template: "post.default"
+                view: "post.default"
 output:
     path: "{{slug}}"
     file: index

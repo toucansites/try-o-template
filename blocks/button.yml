@@ -2,11 +2,11 @@ name: Button
 tag: a
 params:
   - label: url
-    default: ""
+    defaultValue: ""
   - label: class
-    default: "button"
+    defaultValue: "button"
   - label: target
-    default: "_blank"
+    defaultValue: "_blank"
 removesChildParagraph: true
 attributes:
   - name: href

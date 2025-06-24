@@ -5,4 +5,7 @@ properties:
     title:
         type: string
         required: true
-        default: null
+
+    image:
+        type: asset
+        required: false

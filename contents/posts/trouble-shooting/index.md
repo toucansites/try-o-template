@@ -1,7 +1,7 @@
 ---
 type: post
 title: Troubleshooting
-description: Solutions to common issues with Try-O-Template and Toucan static site generator.
+description: Solutions to common issues with Try-O-Theme and Toucan static site generator.
 publication: 2025-03-13 00:00:01
 tags:
   - deployment
@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-This guide will help you troubleshoot common problems when working with **Try-O-Template** and **Toucan**.
+This guide will help you troubleshoot common problems when working with **Try-O-Theme** and **Toucan**.
 
 ---
 
@@ -222,12 +222,12 @@ The tag assigned to a post is not working, or the post is not grouped under the 
 
 **Possible Causes**  
 
-- The tag used in the post’s tags field does not exist in the src/contents/tags/ directory.
+- The tag used in the post’s tags field does not exist in the contents/tags/ directory.
 - Typo in the tag folder name or in the tags field of the post.
 
 **Solution**  
 
-- Check that the tag has a corresponding folder in src/contents/tags/ (e.g., src/contents/tags/tutorials/).
+- Check that the tag has a corresponding folder in contents/tags/ (e.g., contents/tags/tutorials/).
 - Make sure the folder contains index.md with at least:
 
   ```markdown
