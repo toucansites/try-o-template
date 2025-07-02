@@ -15,12 +15,18 @@ contentTypes:
     lastUpdate:
         - post
 
+dataTypes:
+    date: 
+        formats:
+            rss:
+                format: "EEE, dd MMM yyyy HH:mm:ss Z"
+
 engine: 
     id: mustache
     options:
         contentTypes: 
             rss:
-                template: "rss"
+                view: "rss"
 
 output:
     path: ""

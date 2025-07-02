@@ -21,7 +21,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
 ## Step 1: Navigate to the Authors Directory
 
 1. Open your project directory.
-2. Go to the **src/contents/authors/** folder. This folder contains all author-related content.
+2. Go to the **contents/authors/** folder. This folder contains all author-related content.
 
 ---
 
@@ -31,7 +31,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
    - Name the folder based on the author's name. For example:
 
      ```bash
-     mkdir src/contents/authors/john-doe
+     mkdir contents/authors/john-doe
      ```
 
    - Use lowercase letters and hyphens for consistency in folder naming.
@@ -40,7 +40,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
 
 ## Step 3: Add an **index.md** File
 
-1. Inside the new directory (e.g., **src/contents/authors/john-doe**), create a file named **index.md**.
+1. Inside the new directory (e.g., **contents/authors/john-doe**), create a file named **index.md**.
    - This file stores the author’s metadata.
 
 2. Add the following content to the **index.md** file:
@@ -73,7 +73,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
 1. Inside the author's directory, create an **assets** folder:
 
    ```bash
-   mkdir src/contents/authors/john-doe/assets
+   mkdir contents/authors/john-doe/assets
    ```
 
 2. Place a profile picture named **cover.jpg** (or the filename specified in the **image field**) inside the assets folder.
@@ -119,7 +119,7 @@ After creating the author, you need to regenerate your site to apply the changes
     ```
 
 - **Styling Author Profiles**:
-  - To customize the author display, modify the relevant Mustache template in the **src/themes/default/templates/** directory.
+  - To customize the author display, modify the relevant Mustache template in the **themes/default/templates/** directory.
 
 ---
 

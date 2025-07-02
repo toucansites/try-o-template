@@ -21,7 +21,7 @@ Tags are essential for organizing content on your website. They help visitors fi
 ## Step 1: Navigate to the Tags Directory
 
 1. Open your project directory.
-2. Go to the **src/contents/tags/** folder. This folder contains all tag-related content.
+2. Go to the **contents/tags/** folder. This folder contains all tag-related content.
 
 ---
 
@@ -31,7 +31,7 @@ Tags are essential for organizing content on your website. They help visitors fi
    - Name the folder based on the tag name you want to add. For example:
 
      ```bash
-     mkdir src/contents/tags/my-new-tag
+     mkdir contents/tags/my-new-tag
      ```
 
    - Use lowercase letters and hyphens for consistency in folder naming.
@@ -40,7 +40,7 @@ Tags are essential for organizing content on your website. They help visitors fi
 
 ## Step 3: Add an **index.md** File
 
-1. Inside the new directory (e.g., **src/contents/tags/my-new-tag**), create a file named **index.md**.
+1. Inside the new directory (e.g., **contents/tags/my-new-tag**), create a file named **index.md**.
    - This file stores the metadata for the tag.
 
 2. Add the following content to the **index.md** file:
@@ -101,7 +101,7 @@ Once the tag is created, regenerate your site to apply the changes:
     ```
 
 - **Styling Tags**:
-  - To customize how tags are displayed, modify the relevant Mustache template in the **src/themes/default/templates/** directory.
+  - To customize how tags are displayed, modify the relevant Mustache template in the **themes/default/templates/** directory.
 
 ---
 

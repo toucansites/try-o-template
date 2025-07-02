@@ -20,7 +20,7 @@ This guide will help you customize **Try-O-Theme**, from adjusting styles to usi
 
 ## 1. Changing the Background Color
 
-To adjust background colors, add or modify these variables in **src/themes/default/assets/css/variables.css**:
+To adjust background colors, add or modify these variables in **themes/default/assets/css/variables.css**:
 
 ```css
 :root {

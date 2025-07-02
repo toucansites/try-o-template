@@ -20,15 +20,15 @@ In **Try-O-Theme**, you can add extra content to your pages using **Markdown** i
 
 ## 1. Understanding How Pages Work in Try-O-Theme
 
-All the page content in **Try-O-Theme** is defined inside the **src/contents/** directory.  
+All the page content in **Try-O-Theme** is defined inside the **contents/** directory.  
 Common pages include:  
 
-- Homepage → **src/contents/index.md**  
-- Search Page → **src/contents/search/index.md**
-- Tags List → **src/contents/lists/tag/index.md**
-- Authors List → **src/contents/lists/author/index.md**
-- About Page → **src/contents/about/index.md**
-- Custom Pages (like "About") → **src/contents/custom-page/index.md**
+- Homepage → **contents/[home]index.md**  
+- Search Page → **contents/search/index.md**
+- Tags List → **contents/lists/tag/index.md**
+- Authors List → **contents/lists/author/index.md**
+- About Page → **contents/about/index.md**
+- Custom Pages (like "About") → **contents/custom-page/index.md**
 
 Each of these pages supports **custom content and metadata** stored in the **index.md** file.  
 

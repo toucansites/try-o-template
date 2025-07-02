@@ -20,7 +20,7 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ## Step 1: Edit the Navigation Menu
 
-1. Open the **src/site.yml** file in your project directory.
+1. Open the **site.yml** file in your project directory.
    - This file manages the navigation menu displayed on your site.
 
 2. Add a new entry under the **navigation** section for your custom page. Example:
@@ -45,18 +45,18 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 
 ## Step 2: Create the Custom Page Directory
 
-1. Navigate to the **src/contents/** folder.
+1. Navigate to the **contents/** folder.
 2. Create a new directory for your custom page. For example:
 
    ```bash
-   mkdir src/contents/contact-us
+   mkdir contents/contact-us
    ```
 
 ---
 
 ## Step 3: Add an **index.md** File
 
-1. Inside the new directory (e.g., **src/contents/contact-us**), create a file named **index.md**.
+1. Inside the new directory (e.g., **contents/contact-us**), create a file named **index.md**.
    - This file stores the metadata and content for the custom page.
 
 2. Add the following content to the **index.md** file:
@@ -97,7 +97,7 @@ City, Country 12345
 ## Step 5: Create a New Template (Optional)
 
 1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache template:
-   - Navigate to **src/themes/default/templates/pages/**.
+   - Navigate to **themes/default/templates/pages/**.
    - Create a new Mustache file, e.g., **contact_page.mustache**.
 2. Update the **template** field in the custom page's metadata to use your new template:
 

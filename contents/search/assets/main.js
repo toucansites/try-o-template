@@ -1,3 +1,5 @@
+//const { use } = require("react");
+
 // wait for onLoad()
 window.onload = function() {
     checkForSearch();
@@ -31,6 +33,8 @@ async function handleSearch(searchText) {
     try {
         const responseData = await postFormDataAsJson();
 
+        console.log("1");
+
         const innerHTML = responseData
         .filter(function(item) {
             return item.title.toLowerCase().includes(searchText) || 
@@ -47,13 +51,15 @@ async function handleSearch(searchText) {
                 title: item.title,
                 permalink: item.permalink,
                 image: item.image,
-                date: item.publication.formats.sitemap,
+                date: item.publication.date.medium,
                 authors: authors
             });
 
             return html;
         })
         .join("")
+
+        console.log("2");
 
         if (innerHTML.trim() === "") {
             document.getElementById("search-list").innerHTML = `<div><p>No results.</p></div>`;

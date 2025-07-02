@@ -1,15 +1,15 @@
 <div id="navigation-container">
     <header id="navigation" class="wrapper">
-        <a href="{{site.baseUrl}}/">
+        <a href="{{baseUrl}}/">
             <picture>
                 <source
-                    srcset="{{site.baseUrl}}/images/logos/logo~dark.png"
+                    srcset="{{baseUrl}}/images/logos/logo~dark.png"
                     media="(prefers-color-scheme: dark)"
                     >
                 <img
-                    src="{{site.baseUrl}}/images/logos/logo.png"
-                    alt="Logo of {{site.title}}"
-                    title="{{site.title}}"
+                    src="{{baseUrl}}/images/logos/logo.png"
+                    alt="Logo of {{site.name}}"
+                    title="{{site.name}}"
                     >
             </picture>
         </a>
@@ -26,7 +26,7 @@
                 <div class="menu-items">
 
                     {{#site.navigation}}
-                    <a href="{{site.baseUrl}}{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+                    <a href="{{baseUrl}}{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
                     {{/site.navigation}}
 
                     <div class="search-box">

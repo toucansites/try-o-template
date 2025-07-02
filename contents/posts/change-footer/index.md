@@ -20,7 +20,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 1: Edit the Footer Content
 
-1. Open the **src/site.yml** file in your project directory.
+1. Open the **site.yml** file in your project directory.
    - This file contains the global configuration for your site, including footer content.
 
 2. Locate the **footer-socials** section. Example:
@@ -63,7 +63,7 @@ The footer is an important section of your website, often used to display additi
 
 ## Step 3: Update Footer Styles (Optional)
 
-1. Navigate to the **src/themes/default/templates/partials/** directory. The footer layout is defined in the Mustache file: **footer.mustache**.
+1. Navigate to the **themes/default/templates/partials/** directory. The footer layout is defined in the Mustache file: **footer.mustache**.
 
 2. Edit the **footer.mustache** to adjust the structure, style, or additional content. Example:
 
@@ -82,7 +82,7 @@ The footer is an important section of your website, often used to display additi
    </footer>
    ```
 
-3. Modify the CSS styles in **src/themes/default/assets/css/footer.css** to match your design preferences.
+3. Modify the CSS styles in **themes/default/assets/css/footer.css** to match your design preferences.
 
 ---
 

@@ -21,7 +21,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
 ## Step 1: Navigate to the Posts Directory
 
 1. Open your project directory.
-2. Go to the **src/contents/posts/** folder. This folder contains all post-related content.
+2. Go to the **contents/posts/** folder. This folder contains all post-related content.
 
 ---
 
@@ -31,7 +31,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
    - Name the folder based on the post title or a short identifier. For example:
 
      ```bash
-     mkdir src/contents/posts/my-first-post
+     mkdir contents/posts/my-first-post
      ```
 
    - Use lowercase letters and hyphens to maintain consistency in folder naming.
@@ -40,7 +40,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
 
 ## Step 3: Add an **index.md** File
 
-1. Inside the new directory (e.g., **src/contents/posts/my-first-post**), create a file named **index.md**.
+1. Inside the new directory (e.g., **contents/posts/my-first-post**), create a file named **index.md**.
    - This file stores the metadata and content for the post.
 
 2. Add the following content to the **index.md** file:
@@ -106,7 +106,7 @@ This is the content of my first blog post. It’s written in Markdown, so you ca
 1. Your new post requires a cover image, create an **assets** folder inside the post directory:
 
   ```bash
-  mkdir src/contents/posts/my-first-post/assets
+  mkdir contents/posts/my-first-post/assets
   ```
 
 2. Copy your cover image to the assets folder:
@@ -119,7 +119,7 @@ This is the content of my first blog post. It’s written in Markdown, so you ca
 1. If your post needs to include other images, create an **assets** folder inside the post directory (if not already exist):
 
   ```bash
-  mkdir src/contents/posts/my-first-post/assets
+  mkdir contents/posts/my-first-post/assets
   ```
 
 2. Place your images in the **assets** folder and reference them in your Markdown content. Example:

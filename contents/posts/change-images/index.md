@@ -22,9 +22,9 @@ Learn how to change images, including the site logo, the favicon, cover images, 
 
 Different types of images in **Try-O-Theme** are stored in different directories:  
 
-- **Site Logo**: Located in **src/assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
-- **Post Images**: Stored in **src/contents/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
-- **Author Images**: Found in **src/contents/authors/author-name/assets/**, used for author profile pictures (author.jpg).
+- **Site Logo**: Located in **assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
+- **Post Images**: Stored in **contents/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
+- **Author Images**: Found in **contents/authors/author-name/assets/**, used for author profile pictures (author.jpg).
 - **General Markdown Images**: Can be stored inside any **assets/** directory within posts, pages, or other content. Used for embedding images inside Markdown files.
 
 ---
@@ -34,7 +34,7 @@ Different types of images in **Try-O-Theme** are stored in different directories
 1. **Navigate to the logo directory:**  
 
    ```bash
-   cd src/assets/images/logos/
+   cd assets/images/logos/
    ```
 
 2. Replace the **logo.png** and **logo~dark.png** files with your custom images.
@@ -59,7 +59,7 @@ Favicons are the small icons that appear in browser tabs and bookmarks. To updat
 1. Navigate to the favicon directory:
 
    ```bash
-   cd src/assets/icons/
+   cd assets/icons/
    ```
 
 2. Replace the existing favicon files with your own. Recommended formats:
@@ -82,7 +82,7 @@ Favicons are the small icons that appear in browser tabs and bookmarks. To updat
 1. Go to the post directory where you want to add/change images:
 
    ```bash
-   cd src/contents/my-post/assets/
+   cd contents/my-post/assets/
    ```
 
 2. Replace or add images:
@@ -109,7 +109,7 @@ Favicons are the small icons that appear in browser tabs and bookmarks. To updat
 1. Navigate to the author’s directory:
 
    ```bash
-   cd src/contents/authors/author-name/assets/
+   cd contents/authors/author-name/assets/
    ```
 
 2. Replace the profile image (e.g., **author.jpg**).
