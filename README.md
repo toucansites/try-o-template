@@ -26,7 +26,7 @@ Try-O is the very first official template for the Toucan static site generator (
 
 - [Live Demo Site](https://toucansites.github.io/try-o-template-demo/)
 - [Live Demo Source Code](https://github.com/toucansites/try-o-template-demo)
-- [About Toucan Templates](https://toucansites.com/docs/themes/)
+- [About Toucan Templates](https://toucansites.com/docs/templates/)
 - [Toucan Installation Guides](https://toucansites.com/docs/installation/)
 - [Toucan Getting Started Guides](https://toucansites.com/docs/getting-started/)
 
